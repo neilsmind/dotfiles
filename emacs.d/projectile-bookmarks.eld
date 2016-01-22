@@ -1,0 +1,1 @@
+("~/Projects/dts/stations/" "~/.dotfiles/" "~/Projects/dts/ads/" "~/Projects/personal/docker-test/blah/" "~/Projects/scorebrd/mylights/" "/docker:8062aaaf23fb:/usr/src/app/" "~/Projects/dts/hdm/" "~/.drush/" "~/Projects/scorebrd/obir/" "~/dotfiles/")

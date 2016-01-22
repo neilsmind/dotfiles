@@ -1,0 +1,69 @@
+
+;; ----- smex-history -----
+(
+ scss-mode
+ package-install
+ sass-mode
+ magit-log-buffer-file
+ projectile-remove-known-project
+ align-regexp
+ copy-file
+)
+
+;; ----- smex-data -----
+(
+ (powerline-vim-theme . 1)
+ (powerline-default-theme . 1)
+ (package-install . 33)
+ (ruby-guard . 11)
+ (inf-ruby . 1)
+ (ruby-tools-mode . 2)
+ (package-refresh-contents . 4)
+ (rubocop-mode . 2)
+ (flycheck-verify-setup . 2)
+ (shell-pop . 9)
+ (toggle-frame-fullscreen . 3)
+ (whitespace-cleanup-mode . 1)
+ (line-number-mode . 4)
+ (linum-mode . 2)
+ (column-number-mode . 2)
+ (dash-at-point . 2)
+ (rubocop-autocorrect-current-file . 1)
+ (comment-region . 14)
+ (uncomment-region . 16)
+ (package-list-packages . 15)
+ (shell-mode . 1)
+ (toggle-word-wrap . 4)
+ (rename-file . 22)
+ (coffee-mode . 2)
+ (align-regexp . 15)
+ (align . 1)
+ (sass-mode . 17)
+ (common-lisp-mode . 1)
+ (ruby-mode . 2)
+ (save-buffer . 1)
+ (replace-regexp . 1)
+ (haml-mode . 1)
+ (floobits-add-to-workspace . 1)
+ (floobits-share-dir-private . 1)
+ (floobits-summon . 2)
+ (floobits-join-workspace . 4)
+ (enable-theme . 1)
+ (load-theme . 2)
+ (floobits-follow-user . 1)
+ (floobits-leave-workspace . 1)
+ (magit-status . 29)
+ (magit-gitignore . 1)
+ (where-is . 1)
+ (magit-apply . 1)
+ (docker-containers . 11)
+ (docker-images . 4)
+ (getenv . 3)
+ (exec-path-from-shell-initialize . 1)
+ (docker-mode . 1)
+ (copy-file . 1)
+ (sp-absorb-sexp . 1)
+ (projectile-remove-known-project . 1)
+ (magit-log-buffer-file . 2)
+ (scss-mode . 1)
+)

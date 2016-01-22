@@ -1,0 +1,2 @@
+(powerline-default-theme)
+

@@ -1,0 +1,6 @@
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "DOCKER_MACHINE_NAME")
+  (exec-path-from-shell-copy-env "DOCKER_TLS_VERIFY")
+  (exec-path-from-shell-copy-env "DOCKER_HOST")
+  (exec-path-from-shell-copy-env "DOCKER_CERT_PATH"))

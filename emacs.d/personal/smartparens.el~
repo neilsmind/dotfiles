@@ -1,0 +1,4 @@
+;; Gotta see matching parens
+(require 'smartparens-config)
+(require 'smartparens-ruby)
+(show-paren-mode t)
