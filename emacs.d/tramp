@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <16/01/14 10:17:19 /Users/neil/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <16/03/01 13:42:13 /Users/neil/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -57,12 +57,6 @@
   ("perl-file-spec" t)
   ("perl-cwd-realpath" t)
   ("perl" "\\perl"))
- (["scp" nil "docker" nil nil]
-  nil)
- (["docker" nil "stations_web" nil nil]
-  nil)
- (["docker" nil "stations_web1" nil nil]
-  nil)
  (["docker" nil "8062aaaf23fb" nil nil]
   ("locale" "LC_ALL=C")
   ("uname" "Linux 4.1.13-boot2docker")
@@ -80,4 +74,6 @@
   ("readlink" "\\readlink")
   ("gid-integer" 0)
   ("git" "\\git")
-  ("~" "/root")))
+  ("~" "/root"))
+ (["scp" nil "127.0.0.1" nil nil]
+  nil))

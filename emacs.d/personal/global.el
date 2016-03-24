@@ -16,6 +16,7 @@
 ;; Hide the toolbar
 (tool-bar-mode -1)
 
+
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
@@ -30,6 +31,9 @@
 ;; "C-h d transient" for more info
 (setq transient-mark-mode t)
 (pending-delete-mode t)
+
+;; For emacsclient
+(server-start)
 
 ;; Display line and column numbers
 (global-linum-mode t)

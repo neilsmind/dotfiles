@@ -82,35 +82,46 @@ _load_settings() {
   if [ -d "$_dir" ]; then
     if [ -d "$_dir/pre" ]; then
       for config in "$_dir"/pre/**/(N-.); do
-        . $config
+	. $config
       done
     fi
 
     for config in "$_dir"/**/(N-.); do
       case "$config" in
-        "$_dir"/pre/*)
-          :
-          ;;
-        "$_dir"/post/*)
-          :
-          ;;
-        *)
-          if [ -f $config ]; then
-            . $config
-          fi
-          ;;
+	"$_dir"/pre/*)
+	  :
+	  ;;
+	"$_dir"/post/*)
+	  :
+	  ;;
+	*)
+	  if [ -f $config ]; then
+	    . $config
+	  fi
+	  ;;
       esac
     done
 
     if [ -d "$_dir/post" ]; then
       for config in "$_dir"/post/**/(N-.); do
-        . $config
+	. $config
       done
     fi
   fi
 }
 _load_settings "$HOME/.zsh/configs"
 
+machine_status=`docker-machine status default`
+echo $machine_status
+if [[ $machine_status = Running ]]
+then
+  eval $(docker-machine env default)
+else
+  echo "Docker not started"
+fi
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 export PATH="/usr/local/sbin:$PATH"
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh

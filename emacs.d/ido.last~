@@ -2,15 +2,22 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/neil/Projects/lucidus/" . "d7-test/")
+ ("/Users/neil/Sites/whitney/sites/" . "default/")
+ ("/Users/neil/Sites/gsmr/sites/" . "default/")
+ ("/Users/neil/Sites/" . "gsmr/")
+ ("/usr/local/" . "opt/")
+ ("/usr/local/etc/apache2/" . "2.4/")
+ ("/usr/local/etc/" . "apache2/")
  ("/Users/neil/Projects/dts/stations/app/views/" . "station_license_agreements/")
- ("/Users/neil/Projects/dts/stations/app/" . "models/")
+ ("/Users/neil/Projects/dts/stations/app/" . "policies/")
  ("/Users/neil/Projects/dts/" . "stations/")
  ("/Users/neil/Projects/personal/docker-test/" . "blah/")
- ("/Users/neil/Projects/personal/" . "docker-test/")
+ ("/Users/neil/Projects/personal/" . "neiltest/")
  ("/Users/neil/Projects/" . "personal/")
  ("/Users/neil/scorebrd/rajeev/" . "stations-admin/")
  ("/Users/neil/Downloads/" . "icomoon (10)/")
- ("/Users/neil/" . "Projects/")
+ ("/Users/neil/" . "Sites/")
  ("/usr/" . "local/")
  ("/Users/neil/scorebrd/" . "rajeev/")
  ("/Users/neil/work/scorebrd/mylights/app/assets/" . "javascripts/")
@@ -21,24 +28,43 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ #("/Users/neil/Projects/dts/stations/test/factories/" 39 48 (face flx-highlight-face))
+ #("/Users/neil/Projects/dts/stations/test/models/" 34 38 (face flx-highlight-face) 39 45 (face flx-highlight-face))
+ "/Users/neil/Projects/personal/neiltest/"
+ "/Users/neil/Sites/gsmr/sites/default/"
+ "/Users/neil/Projects/lucidus/d7-test/"
+ "/Users/neil/.dotfiles/"
+ "/Users/neil/.dotfiles/emacs.d/personal/"
+ "/Users/neil/.dotfiles/emacs.d/"
+ "/Users/neil/Sites/whitney/sites/default/"
+ "/Users/neil/Sites/gsmr/"
+ "/Users/neil/.drush/"
+ "/Users/neil/Sites/gsmr/sites/all/themes/zen_smoky/css/"
+ "/Users/neil/Sites/"
+ "/etc/"
+ "/Users/neil/Projects/dts/stations/test/controllers/"
+ "/Users/neil/Projects/dts/stations/app/controllers/"
+ "/Users/neil/Projects/dts/stations/app/models/"
+ "/Users/neil/Projects/dts/stations/app/policies/"
+ "/Users/neil/Sites/milford/"
+ "/Users/neil/Sites/dpm/"
+ "/usr/local/opt/httpd24/"
+ "/usr/local/etc/apache2/2.4/"
+ "/Users/neil/.pow/"
+ "/Users/neil/Projects/dts/stations/"
  "/Users/neil/Projects/dts/stations/app/views/station_license_agreements/"
  "/Users/neil/.emacs.d/personal/"
- "/Users/neil/Projects/dts/stations/app/models/"
- "/Users/neil/Projects/dts/stations/app/controllers/"
  "/Users/neil/Projects/dts/stations/app/views/us_stations/"
- "/Users/neil/Projects/dts/stations/"
  "/docker:8062aaaf23fb:/usr/src/app/"
  "/Users/neil/Projects/personal/docker-test/blah/config/"
  "/Users/neil/Projects/personal/docker-test/blah/"
  "/Users/neil/"
  "/Users/neil/.emacs.d/"
- "/Users/neil/.dotfiles/"
  "/Users/neil/Projects/personal/docker-test/"
  "/Users/neil/Downloads/icomoon (13)/"
  "/Users/neil/Downloads/icomoon (11)/"
  "/Users/neil/Downloads/icomoon (10)/"
  "/Users/neil/Downloads/icomoon (10)/demo-files/"
- "/etc/"
  "/usr/local/var/postgres/"
  "/Users/neil/work/scorebrd/pgloader/"
  "/Users/neil/scorebrd/obir/"
@@ -50,20 +76,120 @@
 
 ;; ----- ido-work-file-list -----
 (
- "_edit_sla.html.haml"
- "new.html.haml"
- "_form.html.haml"
- "projectile.el"
- "custom.el"
- "ca_station.rb"
- "ca_stations_controller.rb"
- "Dockerfile"
- "README.rdoc"
- "database.yml"
+ "softwares.rb"
+ "rebroadcast_types.rb"
+ "content_types.rb"
+ "content_type_test.rb"
+ "language_test.rb"
+ "genre_test.rb"
+ "Gemfile"
+ "settings.php"
+ "composer.json"
+ "composer.lock"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ (#("/Users/neil/Projects/dts/stations/test/factories/" 39 48 (face flx-highlight-face)) (22257 29570 0 0) "users.rb" "stations.rb" "station_license_agreements.rb" "station_exports.rb" "station_data_services.rb" "station_count_snapshots.rb" "station_contacts.rb" "rebroadcast_types.rb" "phones.rb" "people.rb" "manufacturers.rb" "location.rb" "languages.rb" "group_deals.rb" "genres.rb" "format_mappings.rb" "email_addresses.rb" "devices.rb" "data_services.rb~" "data_services.rb" "content_types.rb" "company_contacts.rb" "companies.rb" "channels.rb" "bia_stations.rb" "bia_station_markets.rb" "bia_station_addresses.rb" "bia_regional_areas.rb" "bia_owners.rb" "bia_owner_addresses.rb" "bia_markets.rb" "bia_licensees.rb" "bia_designated_market_areas.rb" "artist_experience.rb" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/test/models/" (22257 29765 0 0) "user_test.rb~" "user_test.rb" "us_station_test.rb" "station_test.rb" "station_license_agreement_test.rb" "station_data_service_test.rb~" "station_data_service_test.rb" "station_data_service.rb~" "station_contact_test.rb" "software_test.rb" "rebroadcast_type_test.rb" "person_test.rb" "mx_station_test.rb~" "mx_station_test.rb" "manufacturer_test.rb" "location_test.rb~" "location_test.rb" "location.rb~" "language_test.rb~" "language_test.rb" "group_deal_test.rb" "genre_test.rb~" "genre_test.rb" "device_test.rb" "data_service_test.rb~" "data_service_test.rb" "content_type_test.rb~" "content_type_test.rb" "company_test.rb" "company_contact_test.rb" "channel_test.rb" "ca_station_test.rb~" "ca_station_test.rb" "bia/" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/app/models/" (22257 28889 0 0) "user.rb~" "user.rb" "us_station.rb" "station_license_agreement.rb" "station_data_service.rb" "station_count_snapshot.rb" "station_contact.rb" "station.rb" "software.rb" "rebroadcast_type.rb" "person.rb" "mx_station.rb~" "mx_station.rb" "mod_status.rb" "manufacturer.rb" "location.rb" "language.rb" "group_deal.rb" "genre.rb" "format_mapping.rb" "device.rb" "data_service.rb" "content_type.rb" "concerns/" "company_contact.rb" "company.rb" "channel.rb" "ca_station.rb" "bia.rb" "bia/" "artist_experience.rb" ".gitkeep" "#nielsen_market.rb#" "#export_database.rb#" "../" "./")
+
+ (#("/Users/neil/Projects/dts/stations/test/" 34 38 (face flx-highlight-face)) (22256 15138 0 0) "workers/" "test_helper.rb" "tasks/" "policies/" "models/" "fixtures/" "factories/" "controllers/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/" (22256 15138 0 0) "vendor/" "tmp/" "test/" "README.md" "Rakefile" "public/" "Procfile" "log/" "lib/" "Guardfile" "Gemfile.lock.orig" "Gemfile.lock" "Gemfile" "doc/" "db/" "coverage/" "config.ru" "config/" "Capfile" "bin/" "app/" ".ruby-version" ".rubocop_todo.yml" ".rubocop.yml" ".projectile" ".gitignore" ".gitattributes~" ".gitattributes" ".git/" ".DS_Store" ".bundle/" "../" "./")
+
+ ("/Users/neil/Projects/personal/neiltest/" (22249 41074 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/Projects/personal/" (22249 41058 0 0) "todos/" "ruby-rails-sample/" "otto-test/" "neiltest/" "mylights/" "elasticsearch/" "docker-test/" "AVCamSwift/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/app/models/concerns/" (22215 15472 0 0) "searchable_dependency.rb" "searchable.rb" "pg_searchable.rb" "../" "./")
+
+ ("/Users/neil/Sites/gsmr/" (22247 13148 0 0) "xmlrpc.php" "UPGRADE.txt" "update.php" "themes/" "sites/" "scripts/" "robots.txte" "robots.txt" "profiles/" "neiltest.php" "mysql.server" "modules/" "misc/" "MAINTAINERS.txt" "LICENSE.txt" "INSTALL.txt" "install.php" "INSTALL.pgsql.txt" "INSTALL.mysql.txt" "index.php" "includes/" "gsmr.css" "gsmr.0.css" "cron.php" "COPYRIGHT.txt" "CHANGELOG.txt" ".htaccess" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/" (22247 13189 0 0) "work/" "windows shared/" "VirtualBox VMs/" "Sites/" "rtl8812AU_8821AU_linux/" "Resources/" "Public/" "Projects/" "Pictures/" "pgadmin.log" "mylights-prod/" "Music/" "Movies/" "mongodb_backup/" "mongo/" "Library/" "ios/" "greeting.workflow/" "greeting.rb" "greeting.app/" "Google Drive/" "gohome.app/" "dumps/" "Dropbox/" "Downloads/" "dotfiles.thoughtbot/" "Documents/" "Desktop/" "bad_data.csv" "backup/" "Applications/" ".zshrc.pre-oh-my-zsh" ".zshrc.local~" ".zshrc.local" ".zshrc" ".zshenv~" ".zshenv" ".zsh_history" ".zsh-update" ".zsh/" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Neil.local.64905" ".zcompdump.Neil.local.36270" ".zcompdump.Neil-2.local.24916" ".zcompdump-Neil’s MacBook Air-5.0.5" ".zcompdump-Neil’s MacBook Air-5.0.2" ".zcompdump-Neil-5.0.8" ".zcompdump-Neil-5.0.5" ".zcompdump-Neil-5.0.2" ".zcompdump-Neil (2)-5.0.5" ".zcompdump--5.0.5.Neils-Air.home.594" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vnc/" ".vimrc.local" ".vimrc.bundles.local" ".vimrc.bundles" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".v8flags.4.5.103.35.neil.json" ".Trash/" ".tmux.conf" ".tm_properties" ".titanium/" ".tilemill/" ".subversion/" ".strongloop/" ".ssh/" ".sh_history" ".screenleap" ".rubocop.yml~" ".rubocop.yml" ".rubies/" ".rspec" ".rnd" ".rcrc" ".rbenv/" ".psqlrc.local" ".psqlrc" ".psql_history-station_licenses_prod_import" ".psql_history-postgres" ".psql_history-obir_development" ".psql_history-neil" ".psql_history-d2l65qk30hasac" ".psql_history" ".pry_history" ".profile" ".powenv" ".powconfig~" ".powconfig" ".pow.backup.nkg/" ".pow.backup/" ".pow/" ".plugman/" ".pgpass" ".pgadmin_histoqueries" ".pentaho/" ".pearrc" ".oracle_jre_usage/" ".oh-my-zsh/" ".npmrc~" ".npmrc" ".npm-packages/" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".nds/" ".mysql_history" ".my.cnf" ".mongorc.js" ".meteorsession" ".meteorite/" ".meteor/" ".mean" ".local/" ".lldb/" ".lesshst" ".kettle/" ".iterm2_shell_integration.zsh" ".irbrc~" ".irbrc" ".irb_history" ".irb-history" ".InstallAnywhere/" ".hushlogin" ".hgignore_global" ".heroku/" ".gvimrc" ".guard_history" ".guard.rb" ".goodsync/" ".gnome2/" ".gitmessage" ".gitignore_global~" ".gitignore_global" ".gitignore" ".gitconfig.local~" ".gitconfig.local" ".gitconfig" ".git_template/" ".gemrc" ".gem/" ".fontconfig/" ".floorc.json~" ".floorc.json" ".flexlmrc" ".ffi-inliner/" ".exercism.json" ".erc/" ".emacs.d/" ".eclipse/" ".ec2/" ".DS_Store" ".drushrc.php" ".drush/" ".dropbox/" ".dotfiles.original/" ".dotfiles/" ".docker/" ".divshot/" ".dbshell" ".cups/" ".cordova/" ".config/" ".composer/" ".codeintel/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".boot2docker/" ".bin/" ".bashrc" ".bash_profile" ".bash_history" ".aws/" ".atom/" ".anyconnect" ".ansible/" ".android/" ".aliases~" ".aliases" ".agignore" ".acs" "#.zshrc.local#" "../" "./")
+
+ ("/Users/neil/Projects/lucidus/d7-test/" (22246 57966 0 0) "web/" "vendor/" "composer.lock" "composer.json" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/Projects/lucidus/" (22246 57843 0 0) "whitney/" "waldorf/" "tester/" "railevents/" "projects/" "popmed/" "onslow/" "milford_police/" "milford/" "master/" "lucidus/" "harvard_pilgrim/" "durango_html/" "durango-d7/" "durango/" "drush_sup/" "drupal8/" "drupal/" "documents/" "d8-test/" "d7-test/" "clark/" "cdgr/" "capdrupal/" "bootstrap/" "blackmesh/" "archive/" "_popmed_archive/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Projects/" (22246 55425 0 0) "scorebrd/" "personal/" "lucidus/" "dts/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/.dotfiles/" (22247 12072 0 0) "zshrc" "zsh/" "rubocop.yml~" "rubocop.yml" "README.md" "irbrc~" "irbrc" "install.rb" "guard.rb" "gitmessage" "gitignore" "gitconfig" "emacs.d/" "aliases~" "aliases" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/.dotfiles/emacs.d/personal/" (22247 9227 0 0) "yasnippet.el" "smartparens.el~" "smartparens.el" "shell-pop.el~" "shell-pop.el" "server-mode.el" "ruby.el~" "ruby.el" "rubocop.el" "rbenv.el~" "rbenv.el" "projectile.el~" "projectile.el" "private.el~" "private.el" "powerline.el~" "powerline.el" "multiple-cursors.el" "magit.el~" "magit.el" "ido.el~" "ido.el" "highlight.el~" "highlight.el" "global.el~" "global.el" "flycheck.el" "floobits.el~" "floobits.el" "expand-region.el" "exec_path.el" "exec-path-from-shell.el~" "exec-path-from-shell.el" "defuns.el~" "defuns.el" "dash-at-point.el" "custom.el~" "custom.el" "coffee-mode.el" "bundler.el" "bindings.el~" "bindings.el" "#ruby.el#~" "../" "./")
+
+ ("/Users/neil/.dotfiles/emacs.d/" (22247 9221 0 0) "var/" "tramp" "smex-items" "rake.cache" "projectile.cache" "projectile-bookmarks.eld~" "projectile-bookmarks.eld" "personal/" "init.el~" "init.el" "ido.last~" "ido.last" "Cask~" "Cask" "bookmarks" "auto-save-list/" ".mc-lists.el" ".cask/" "../" "./")
+
+ ("/usr/local/bin/" (22242 59895 0 0) "zsh-5.2" "zsh" "zlib_decompress" "yo" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec" "xzcmp" "xzcat" "xz" "xxd" "x86_64-apple-darwin15.2.0-gcc-ranlib-4.8" "x86_64-apple-darwin15.2.0-gcc-nm-4.8" "x86_64-apple-darwin15.2.0-gcc-ar-4.8" "x86_64-apple-darwin15.2.0-gcc-4.8.5" "x86_64-apple-darwin15.2.0-gcc-4.8" "x86_64-apple-darwin15.2.0-g++-4.8" "x86_64-apple-darwin15.2.0-c++-4.8" "x86_64-apple-darwin15.0.0-gfortran-5" "x86_64-apple-darwin15.0.0-gcc-ranlib-5" "x86_64-apple-darwin15.0.0-gcc-nm-5" "x86_64-apple-darwin15.0.0-gcc-ar-5" "x86_64-apple-darwin15.0.0-gcc-5.3.0" "x86_64-apple-darwin15.0.0-gcc-5" "x86_64-apple-darwin15.0.0-g++-5" "x86_64-apple-darwin15.0.0-c++-5" "wstorm" "wrjpgcom" "word-list-compress" "wireshark" "wget" "Wand-config" "virtualenv-2.7" "virtualenv" "VirtualBox" "vimtutor" "vimdiff" "vim" "view" "vboxwebsrv" "VBoxVRDP" "VBoxManage" "VBoxHeadless" "VBoxDTrace" "VBoxBalloonCtrl" "VBoxAutostart" "vbox-img" "vacuumlo" "vacuumdb" "v8" "uuid-config" "uuid" "update_rubygems" "unxz" "unlzma" "uninstall_ndiff" "unflatten" "twopi" "tshark" "tred" "tiffsplit" "tiffset" "tiffmedian" "tiffinfo" "tiffdump" "tiffdither" "tiffcrop" "tiffcp" "tiffcmp" "tiff2rgba" "tiff2ps" "tiff2pdf" "tiff2bw" "thumbnail" "text2pcap" "terminal-notifier" "taglib-config" "sweep" "suexec" "sudolikeaboss" "stream" "soxi" "sox" "SophosUpdate" "sndfile-salvage" "sndfile-regtest" "sndfile-play" "sndfile-metadata-set" "sndfile-metadata-get" "sndfile-interleave" "sndfile-info" "sndfile-deinterleave" "sndfile-convert" "sndfile-concat" "sndfile-cmp" "smixlate" "smistrip" "smiquery" "smilint" "smidump" "smidiff" "smicache" "slencheck" "slc" "sfdp" "sequel" "sconsign" "scons-time" "scons" "sccmap" "sails" "rvim" "rview" "run-with-aspell" "ruby-local-exec" "ruby-build" "ruby" "rotatelogs" "ri" "rgb2ycbcr" "resolveip" "resolve_stack_dump" "replace" "reindexdb" "redis-server" "redis-sentinel" "redis-cli" "redis-check-dump" "redis-check-aof" "redis-benchmark" "rec" "rdoc" "rdjpgcom" "rcup" "rcdn" "rbenv-uninstall" "rbenv-install" "rbenv-bundles" "rbenv" "rawshark" "raw2tiff" "ras2tiff" "randpkt" "rake" "python-local-exec" "python-build" "pyenv-virtualenvs" "pyenv-virtualenv-prefix" "pyenv-virtualenv-init" "pyenv-virtualenv-delete" "pyenv-virtualenv" "pyenv-uninstall" "pyenv-sh-deactivate" "pyenv-sh-activate" "pyenv-install" "pyenv-deactivate" "pyenv-activate" "pyenv" "psql" "pspell-config" "pry" "prune" "process" "prezip-bin" "prezip" "preunzip" "precat" "ppm2tiff" "postmaster" "postgres" "pngfix" "png-fix-itxt" "pltcl_loadmod" "pltcl_listmod" "pltcl_delmod" "play" "pkg-config" "pip-2.7" "pip" "phpize" "php-config" "php-cgi" "php" "phar.phar" "phar" "pgloader" "pgbench" "pg_xlogdump" "pg_upgrade" "pg_test_timing" "pg_test_fsync" "pg_standby" "pg_rewind" "pg_restore" "pg_resetxlog" "pg_recvlogical" "pg_receivexlog" "pg_isready" "pg_dumpall" "pg_dump" "pg_ctl" "pg_controldata" "pg_config" "pg_basebackup" "pg_archivecleanup" "perror" "pecl" "peardev" "pear" "pcretest" "pcregrep" "pcre-config" "patchwork" "pal2rgb" "otto" "osage" "oid2name" "odbcinst" "odbc_config" "nping" "nop" "node" "nmap" "ngmin" "neato" "ndiff" "ncat" "mysqltest_embedded" "mysqltest" "mysqlslap" "mysqlshow" "mysqlpump" "mysqlimport" "mysqldumpslow" "mysqldump" "mysqld_safe" "mysqld_multi" "mysqld" "mysqlcheck" "mysqlbinlog" "mysqladmin" "mysql_upgrade" "mysql_tzinfo_to_sql" "mysql_ssl_rsa_setup" "mysql_secure_installation" "mysql_plugin" "mysql_install_db" "mysql_embedded" "mysql_config_editor" "mysql_config" "mysql_client_test_embedded" "mysql_client_test" "mysql.server" "mysql" "myisampack" "myisamlog" "myisamchk" "myisam_ftdump" "my_print_defaults" "mp3gain" "montage" "mongotop" "mongostat" "mongosniff" "mongos" "mongorestore" "mongoperf" "mongooplog" "mongoimport" "mongofiles" "mongoexport" "mongodump" "mongod" "mongo" "mogrify" "mm2gv" "mksnapshot" "mkrc" "mine" "meteor" "metaflac" "mergecap" "mate" "makedepend" "MagickWand-config" "MagickCore-config" "Magick-config" "Magick++-config" "lzmore" "lzmainfo" "lzmadec" "lzma" "lzless" "lzgrep" "lzfgrep" "lzegrep" "lzdiff" "lzcmp" "lzcat" "lz4_decompress" "lsrc" "logresolve" "libpng16-config" "libpng-config" "lb-ng-doc" "lb-ng" "lame" "ksdiff" "ksba-config" "js2coffee" "jpegtran" "iusql" "isql" "irb" "innochecksum" "initdb" "import" "ifnames" "identify" "i686-apple-darwin11-gfortran-4.2.1" "i686-apple-darwin11-gcc-4.2.1" "i686-apple-darwin11-g++-4.2.1" "i686-apple-darwin11-cpp-4.2.1" "hub" "httxt2dbm" "httpd" "htpasswd" "htdigest" "htdbm" "htcacheclean" "hg" "heroku" "gxl2gv" "gxl2dot" "gvpr" "gvpack" "gvmap" "gvgen" "gvcolor" "gv2gxl" "gv2gml" "grunt" "grep-changelog" "graphml2gv" "gpg-error-config" "gpg-error" "gofmt" "godoc" "go-pear.phar" "go" "gml2gv" "glibtoolize" "glibtool" "gitk" "git-upload-pack" "git-upload-archive" "git-subtree" "git-shell" "git-receive-pack" "git-cvsserver" "git-credential-osxkeychain" "git" "gif2tiff" "gfortran-5" "gfortran-4.2" "gfortran" "gem" "gdbmtool" "gdbm_load" "gdbm_dump" "gcov-tool-5" "gcov-5" "gcov-4.8" "gcov-4.2" "gcc-ranlib-5" "gcc-ranlib-4.8" "gcc-nm-5" "gcc-nm-4.8" "gcc-ar-5" "gcc-ar-4.8" "gcc-5" "gcc-4.8" "gcc-4.2" "gc" "galileod" "g++-5" "g++-4.8" "g++-4.2" "freetype-config" "flac" "fdp" "fcgistarter" "fax2tiff" "fax2ps" "exercism" "ex" "etags" "erb" "emacsclient" "emacs-24.5" "emacs" "elasticsearch" "editcap" "edgepaint" "ecpg" "ebrowse" "dumpcap" "drush" "dropuser" "droplang" "dropdb" "dot_builtins" "dot2gxl" "dot" "docker-machine" "docker-compose" "docker" "dltest" "djpeg" "django-admin.py" "divshot" "display" "direnv" "dijkstra" "dftest" "dbmmanage" "d8" "ctest" "ctags" "createuser" "createlang" "createdb" "cpp-5" "cpp-4.8" "cpp-4.2" "cpack" "convert" "conjure" "composite" "composer" "compare" "coderay" "cmakexbuild" "cmake" "clusterdb" "cluster" "cloog" "cjpeg" "circo" "checkgid" "ccomps" "ccmake" "cask" "capinfos" "c++-5" "c++-4.8" "c++-4.2" "bundler" "bundle" "bsondump" "brew" "bower" "bmp2tiff" "bcomps" "aws_zsh_completer.sh" "aws_completer" "aws_bash_completer" "aws.cmd" "aws" "autoupdate" "autoscan" "autoreconf" "automake-1.15" "automake" "autom4te" "autoheader" "autoconf" "atom" "aspell-import" "aspell" "apxs" "apm" "apachectl" "ansible-pull" "ansible-playbook" "ansible-galaxy" "ansible-doc" "ansible" "animate" "ag" "acyclic" "aclocal-1.15" "aclocal" "ab" "../" "./")
+
+ ("/Users/neil/Projects/lucidus/d8-test/" (22246 52850 0 0) "web/" "vendor/" "scripts/" "README.md" "phpunit.xml.dist" "LICENSE" "drush/" "composer.lock" "composer.json" ".travis.yml" ".gitignore" "../" "./")
+
+ ("/Users/neil/Sites/whitney/sites/default/" (22245 1287 0 0) "themes/" "settings.php~" "settings.php" "lib/" "files/" "default.settings.php" "config/" "Capfile" ".gitignore~" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/Sites/whitney/sites/default/config/" (22245 1514 0 0) "deploy.rb~" "deploy.rb" "deploy/" "../" "./")
+
+ ("/Users/neil/Sites/whitney/sites/default/lib/" (22245 757 0 0) "capistrano/" "../" "./")
+
+ ("/Users/neil/Sites/whitney/" (22244 63345 0 0) "xmlrpc.php" "UPGRADE.txt" "update.php" "themes/" "sites/" "scripts/" "robots.txte" "robots.txt" "profiles/" "modules/" "misc/" "MAINTAINERS.txt" "LICENSE.txt" "INSTALL.txt" "install.php" "INSTALL.pgsql.txt" "INSTALL.mysql.txt" "index.php" "includes/" "favicon.ico" "cron.php" "COPYRIGHT.txt" "CHANGELOG.txt" ".htaccess" "../" "./")
+
+ ("/Users/neil/.drush/" (22244 17296 0 0) "web1.aliases.drushrc.php~" "web1.aliases.drushrc.php" "sedona.aliases.drushrc.php" "local.aliases.drushrc.php" "lmp01.aliases.drushrc.php" "lmp01-cap.aliases.drushrc.php" "drushrc.php" "drush_zsh.drush.inc" "drush_sup/" "drush.prompt.sh" "drush.complete.sh" "drush.bashrc" "cache/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/neil/Sites/whitney/sites/" (20046 45693 0 0) "default/" "all/" "../" "./")
+
+ ("/Users/neil/Sites/" (22244 17305 0 0) "whitney/" "milford/" "logs/" "httpd-vhosts.conf~" "httpd-vhosts.conf" "gsmr/" "dpm/" ".DS_Store" "../" "./")
+
+ ("/var/" (22192 47672 0 0) "yp/" "vm/" "tmp/" "spool/" "rwho/" "run/" "rpc/" "root/" "pgsql_socket/" "networkd/" "netboot/" "msgs/" "mail/" "log/" "lib/" "jabberd/" "folders~orig/" "folders/" "empty/" "db/" "backups/" "audit/" "at/" "agentx/" "../" "./")
+
+ ("/Users/neil/Sites/gsmr/sites/all/themes/zen_smoky/css/" (22243 17965 0 0) "superfish.css" "superfish-vertical.css" "superfish-navbar.css" "smoky.interior.css" "smoky.front.css" "smoky.common.css" "ie7.css" "ie.css" "cse.css.bak" "../" "./")
+
+ ("/etc/" (22243 521 0 0) "zshrc" "zprofile" "xtab" "vnc/" "ttys" "syslog.conf" "sudoers~orig" "sudoers" "sudo_lecture" "sshd_config~previous" "ssh_config~orig" "ssh/" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolver/" "resolv.conf" "rc.netboot" "rc.common" "racoon/" "protocols" "profile" "ppp/" "postgres-reg.ini" "postfix/" "phptest.php" "php.ini.default-5.2-previous~orig" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd~orig" "passwd" "pam.d/" "openssl/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "my.cnf~" "my.cnf.wba.bak" "moduli~previous" "master.passwd~orig" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab" "kern_loader.conf" "irbrc" "hosts~orig" "hosts~" "hosts.mamp.bak" "hosts.equiv" "hosts" "group~previous" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "bashrc_Apple_Terminal" "bashrc" "autofs.conf" "auto_master" "auto_home" "authorization.deprecated" "asl.conf" "asl/" "apache2/" "ansible/" "aliases.db" "aliases" "afpovertcp.cfg" ".qpmd8381.bin" "../" "./")
+
+ ("/Users/neil/.wireshark-etc/" (21474 60973 0 0) "pangox.aliases" "pangorc" "pango.modules" "gtk.immodules" "gdk-pixbuf.loaders" "../" "./")
+
+ ("/Users/neil/Sites/gsmr/sites/default/" (22241 43331 0 0) "settings.php~" "settings.php" "files/" "default.settings.php" "#settings.php#" "../" "./")
+
+ ("/Users/neil/Sites/gsmr/sites/" (20800 40818 0 0) "default/" "all/" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/lib/" (22234 1511 0 0) "tasks/" "station_export.rb~" "station_export.rb" "station_export/" "errors/" "assets/" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/lib/tasks/" (22242 3161 0 0) "station_export.rake~" "station_export.rake" "merge_duplicates.rake" "elasticsearch.rake" "db.rake" "bootstrap.rake" ".gitkeep" "#db.rake#" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/test/controllers/" (22242 60628 0 0) "us_stations_controller_test.rb~" "us_stations_controller_test.rb" "stations_controller_test.rb" "station_license_agreements_controller_test.rb" "station_data_services_controller_test.rb" "genres_controller_test.rb" "format_mappings_controller_test.rb" "devices_controller_test.rb" "dashboards_controller_test.rb" "companies_controller_test.rb" "channels_controller_test.rb" "application_controller_test.rb" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/app/controllers/" (22242 60600 0 0) "us_stations_controller.rb" "stations_controller.rb" "station_license_agreements_controller.rb" "station_data_services_controller.rb" "people_controller.rb" "genres_controller.rb" "format_mappings_controller.rb" "devices_controller.rb" "dashboards_controller.rb" "companies_controller.rb" "channels_controller.rb" "ca_stations_controller.rb" "application_controller.rb" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/app/policies/" (22242 140 0 0) "us_station_policy.rb~" "us_station_policy.rb" "station_policy.rb~" "station_policy.rb" "station_license_agreement_policy.rb~" "station_license_agreement_policy.rb" "station_data_service_policy.rb~" "station_data_service_policy.rb" "person_policy.rb" "genre_policy.rb" "format_mapping_policy.rb" "device_policy.rb~" "device_policy.rb" "dashboard_policy.rb~" "dashboard_policy.rb" "company_policy.rb" "channel_policy.rb~" "channel_policy.rb" "application_policy.rb" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/app/" (22211 18170 0 0) "workers/" "views/" "uploaders/" "presenters/" "policies/" "models/" "mailers/" "inputs/" "helpers/" "controllers/" "assets/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Sites/milford/" (22224 12441 0 0) "xmlrpc.php" "web.config" "UPGRADE.txt" "update.php" "themes/" "sites/" "scripts/" "robots.txt" "README.txt" "README.md" "profiles/" "modules/" "misc/" "MAINTAINERS.txt" "mail.php" "LICENSE.txt" "INSTALL.txt" "INSTALL.sqlite.txt" "install.php" "INSTALL.pgsql.txt" "INSTALL.mysql.txt" "index.php" "includes/" "cron.php" "COPYRIGHT.txt" "CHANGELOG.txt" "authorize.php" ".htaccess" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Sites/dpm/" (22228 55778 0 0) "web.config" "vendor/" "update.php" "tmp/" "themes/" "sites/" "robots.txt" "README.txt" "profiles/" "phpinfo.php" "modules/" "LICENSE.txt" "index.php" "example.gitignore" "core/" "config.ru~" "config.ru" "composer.lock" "composer.json" "autoload.php" ".htaccess" ".gitattributes" ".eslintrc" ".eslintignore" ".editorconfig" ".csslintrc" "../" "./")
+
+ ("/usr/local/opt/httpd24/" (22228 61928 0 0) "share/" "README" "NOTICE" "LICENSE" "libexec/" "INSTALL_RECEIPT.json" "include/" "homebrew.mxcl.httpd24.plist" "CHANGES" "build/" "bin/" "../" "./")
+
+ ("/usr/local/opt/" (22228 61629 0 0) "zsh/" "zlib/" "xz/" "wget/" "vim/" "v8/" "unixodbc/" "the_silver_searcher/" "terminal-notifier/" "taglib/" "sudolikeaboss/" "sox/" "sleepwatcher/" "scons/" "ruby-build/" "ruby/" "redis/" "readline/" "rcm/" "rbenv-readline/" "rbenv-gem-rehash/" "rbenv-default-gems/" "rbenv-binstubs/" "rbenv/" "pyenv-virtualenv/" "pyenv/" "postgresql94/" "postgresql/" "pkg-config/" "php56/" "php55-opcache/" "pcre/" "otto/" "ossp-uuid/" "openssl/" "nvm/" "node/" "nmap/" "net-snmp/" "mysql/" "mpfr2/" "mpfr/" "mp3gain/" "mongodb/" "makedepend/" "mad/" "libyaml/" "libxml2/" "libvorbis/" "libtool/" "libtiff/" "libsndfile/" "libsmi/" "libpng/" "libogg/" "libmpc08/" "libmpc/" "libksba/" "libiconv/" "libgpg-error/" "libffi/" "lame/" "jpeg/" "isl011/" "isl/" "imagemagick/" "icu4c/" "hub/" "httpd24/" "heroku-toolbelt/" "graphviz/" "go/" "gmp4/" "gmp/" "git/" "gettext/" "gdbm/" "gcc48/" "gcc/" "freetype/" "flac/" "exercism/" "emacs/" "elasticsearch/" "direnv/" "ctags/" "cmake/" "cloog018/" "cloog/" "cask/" "brew-cask/" "awscli/" "automake/" "autoconf/" "aspell/" "apr-util/" "apr/" "apple-gcc42/" "../" "./")
+
+ ("/usr/local/etc/apache2/2.4/" (22228 61596 0 0) "original/" "mime.types" "magic" "httpd.conf~" "httpd.conf.default" "httpd.conf.bak" "httpd.conf" "extra/" "envvars-std" "envvars" "#httpd.conf#" "../" "./")
+
+ ("/Users/neil/.pow/" (22228 55052 0 0) "vuejs/" "stations-docker~" "stations-docker" "stations/" "obir/" "mylights/" "hdm.loc/" "default~" "default" "ads/" ".bundle/" "../" "./")
+
+ ("/usr/local/etc/" (22228 39242 0 0) "wgetrc.default" "wgetrc" "sleepwatcher/" "redis.conf.default" "redis.conf" "redis-sentinel.conf.default" "redis-sentinel.conf" "rbenv.d/" "pyenv.d/" "php/" "openssl/" "odbcinst.ini" "odbc.ini" "mongod.conf.default" "mongod.conf" "ImageMagick-6/" "elasticsearch/" "bash_completion.d/" "apache2/" "../" "./")
+
+ ("/Users/neil/Projects/dts/" (22213 63890 0 0) "vuejs/" "stations_export/" "stations_20160128.sql" "stations/" "javascript/" "hdm/" "docker-test/" "docker-compose.yml~" "docker-compose.yml" "ads/" ".DS_Store" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/config/" (22224 50789 0 0) "zoho/" "secrets.yml" "schedule.rb" "routes.rb" "recipes/" "locales/" "initializers/" "environments/" "environment.rb" "elasticsearch.yml" "deploy.rb" "deploy/" "dbf.yml" "database.yml" "config.yml" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/neil/Projects/dts/stations/config/zoho/" (22211 18170 0 0) "database_sql_queries.xml" "../" "./")
+
+ ("/usr/local/etc/apache2/" (22228 31333 0 0) "2.4/" "../" "./")
+
+ ("/usr/local/" (22223 27265 0 0) "var/" "ssl/" "share/" "sbin/" "README.md" "pear/" "opt/" "LICENSE.txt" "Library/" "lib/" "include/" "heroku/" "foreman/" "etc/" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".yardopts" ".travis.yml" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("/usr/" (22038 36450 0 0) "X11/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "adic/" "../" "./")
+
  ("/Users/neil/Projects/dts/stations/app/views/station_license_agreements/" (22178 13946 0 0) "update.js.haml" "new.js.haml" "new.html.haml" "edit.js.haml" "edit.html.haml" "destroy.js.haml" "create.js.haml" "_show_sla.html.haml" "_form.html.haml~" "_form.html.haml" "_edit_sla.html.haml" "_contract_doc.html.haml" "_add_sla.html.haml" "../" "./")
 
  ("/Users/neil/Projects/dts/stations/app/views/channels/" (22177 29833 0 0) "show.html.haml" "new.html.haml" "index.html.haml" "edit.html.haml" "_hd_channel_field.html.haml" "_form.html.haml" "_channels.html.haml" "_channel.json.jbuilder" "_channel.html.haml" "_audio_player.html.haml" "../" "./")
@@ -74,21 +200,13 @@
 
  ("/Users/neil/.emacs.d/" (22175 46734 0 0) "var/" "tramp" "smex-items" "rake.cache" "projectile.cache" "projectile-bookmarks.eld~" "projectile-bookmarks.eld" "personal/" "init.el~" "init.el" "ido.last~" "ido.last" "Cask~" "Cask" "bookmarks" "auto-save-list/" ".mc-lists.el" ".cask/" "../" "./")
 
- ("/Users/neil/" (22174 42810 0 0) "work/" "windows shared/" "VirtualBox VMs/" "Sites/" "Resources/" "Public/" "Projects/" "Pictures/" "pgadmin.log" "Music/" "Movies/" "mongodb_backup/" "Library/" "ios/" "greeting.workflow/" "greeting.rb" "greeting.app/" "Google Drive/" "gohome.app/" "Dropbox/" "Downloads/" "dotfiles.thoughtbot/" "Documents/" "Desktop/" "backup/" "Applications/" ".zshrc.pre-oh-my-zsh" ".zshrc.local~" ".zshrc.local" ".zshrc" ".zshenv~" ".zshenv" ".zsh_history" ".zsh-update" ".zsh/" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Neil.local.64905" ".zcompdump.Neil-2.local.24916" ".zcompdump-Neil’s MacBook Air-5.0.5" ".zcompdump-Neil’s MacBook Air-5.0.2" ".zcompdump-Neil-5.0.8" ".zcompdump-Neil-5.0.5" ".zcompdump-Neil-5.0.2" ".zcompdump-Neil (2)-5.0.5" ".zcompdump--5.0.5.Neils-Air.home.594" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc.local" ".vimrc.bundles.local" ".vimrc.bundles" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".v8flags.4.5.103.35.neil.json" ".Trash/" ".tmux.conf" ".tm_properties" ".titanium/" ".tilemill/" ".subversion/" ".strongloop/" ".ssh/" ".sh_history" ".screenleap" ".rubocop.yml" ".rubies/" ".rspec" ".rnd" ".rcrc" ".rbenv/" ".psqlrc.local" ".psqlrc" ".psql_history-station_licenses_prod_import" ".psql_history-postgres" ".psql_history-obir_development" ".psql_history-neil" ".psql_history-d2l65qk30hasac" ".psql_history" ".pry_history" ".profile" ".powconfig~" ".powconfig" ".pow.backup.nkg/" ".pow.backup/" ".pow/" ".plugman/" ".pgpass" ".pgadmin_histoqueries" ".pentaho/" ".pearrc" ".oracle_jre_usage/" ".oh-my-zsh/" ".npmrc~" ".npmrc" ".npm-packages/" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".nds/" ".mysql_history" ".my.cnf" ".mongorc.js" ".meteorsession" ".meteorite/" ".meteor/" ".mean" ".local/" ".lldb/" ".lesshst" ".kettle/" ".irbrc" ".irb-history" ".InstallAnywhere/" ".hushlogin" ".hgignore_global" ".heroku/" ".gvimrc" ".guard_history" ".goodsync/" ".gnome2/" ".gitmessage" ".gitignore_global~" ".gitignore_global" ".gitignore" ".gitconfig.local~" ".gitconfig.local" ".git_template/" ".gemrc" ".gem/" ".fontconfig/" ".floorc.json~" ".floorc.json" ".ffi-inliner/" ".exercism.json" ".erc/" ".emacs.d/" ".eclipse/" ".ec2/" ".DS_Store" ".drushrc.php" ".drush/" ".dropbox/" ".dotfiles.original/" ".dotfiles/" ".docker/" ".divshot/" ".dbshell" ".cups/" ".cordova/" ".config/" ".composer/" ".codeintel/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".boot2docker/" ".bin/" ".bashrc" ".bash_profile" ".bash_history" ".aws/" ".atom/" ".anyconnect" ".ansible/" ".android/" ".agignore" ".acs" "../" "./")
-
  ("/Users/neil/Projects/dts/ads/" (22129 29279 0 0) "vendor/" "tmp/" "test/" "README.md" "Rakefile" "public/" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "docs/" "db/" "config.ru" "config/" "Capfile" "bin/" "app/" ".sass-cache/" ".ruby-version" ".projectile" ".gitignore" ".git/" ".DS_Store" ".bundle/" "../" "./")
 
  ("/Users/neil/Projects/dts/ads/app/" (22129 48089 0 0) "workers/" "views/" "models/" "mailers/" "lib/" "inputs/" "helpers/" "controllers/" "assets/" ".DS_Store" "../" "./")
 
- ("/Users/neil/Projects/dts/stations/app/models/" (22168 20516 0 0) "us_station.rb" "station_owner_address.rb" "station_owner.rb" "station_license_agreement.rb" "station_export.rb" "station_data_service.rb" "station_count_snapshot.rb" "station_contact.rb" "station.rb" "software.rb" "rebroadcast_type.rb" "postal_address.rb" "phone.rb" "person.rb" "nielsen_market.rb" "mod_status.rb" "manufacturer.rb" "location.rb" "link.rb" "language.rb" "group_deal.rb" "genre.rb" "format_mapping.rb" "export_database.rb" "email_address.rb" "device.rb" "data_service.rb" "content_type.rb" "company.rb" "channel.rb" "bia_station_address.rb" "bia_station.rb" "bia_import_error.rb" "bia_import.rb" "artist_experience.rb" "admin_user.rb" "ability.rb" ".gitkeep" "../" "./")
-
- ("/Users/neil/Projects/dts/stations/app/controllers/" (22169 4597 0 0) "us_stations_controller.rb~" "us_stations_controller.rb" "stations_controller.rb" "station_license_agreements_controller.rb" "station_data_services_controller.rb" "people_controller.rb" "genres_controller.rb" "format_mappings_controller.rb" "devices_controller.rb" "dashboards_controller.rb" "channels_controller.rb" "ca_stations_controller.rb~" "ca_stations_controller.rb" "application_controller.rb" "../" "./")
-
  ("/Users/neil/Projects/dts/stations/app/views/us_stations/" (22168 24653 0 0) "_form.html.haml~" "_form.html.haml" "../" "./")
 
  ("/Users/neil/Projects/dts/stations/app/views/stations/" (22168 23412 0 0) "show.json.jbuilder" "show.html.haml" "new.html.haml" "index.html.haml" "edit.html.haml" "_station_panel.html.haml" "_station.html.haml" "_search.html.haml" "_map.html.haml" "_location.html.haml" "_license.html.haml" "_form.html.haml~" "_form.html.haml" "_contacts.html.haml" ".DS_Store" ".#index.html.haml" ".#_form.html.haml" "#index.html.haml#" "#_form.html.haml#" "../" "./")
-
- ("/Users/neil/Projects/dts/stations/" (22166 54551 0 0) "vendor/" "tmp/" "test/" "script/" "README.rdoc" "README.md" "Rakefile" "public/" "Procfile" "log/" "lib/" "Guardfile" "Gemfile~" "Gemfile.lock.orig" "Gemfile.lock" "Gemfile" "Dockerfile~" "Dockerfile" "docker-compose.yml" "doc/" "db/" "coverage/" "config.ru" "config/" "Capfile" "bin/" "app/" ".ruby-version" ".rubocop_todo.yml" ".rubocop.yml" ".projectile" ".gitignore" ".git/" ".DS_Store" ".bundle/" "#.rubocop.yml#" "../" "./")
 
  ("/Users/neil/Projects/dts/stations/db/" (22163 63680 0 0) "seeds.rb" "schema.rb~" "schema.rb.orig" "schema.rb" "migrate/" "dummies.rb" "../" "./")
 
@@ -96,29 +214,15 @@
 
  ("/Users/neil/Projects/personal/docker-test/blah/config/" (22166 51767 0 0) "secrets.yml" "routes.rb~" "routes.rb" "locales/" "initializers/" "environments/" "environment.rb" "database.yml~" "database.yml" "boot.rb" "application.rb" "../" "./")
 
- ("/Users/neil/.dotfiles/" (22166 44323 0 0) "zshrc" "zsh/" "README.md" "install.rb" "gitconfig" "emacs.d/" ".gitignore~" ".gitignore" ".git/" "../" "./")
-
  ("/Users/neil/Projects/personal/docker-test/blah/db/" (22165 9241 0 0) "seeds.rb" "schema.rb" "migrate/" "development.sqlite3" "../" "./")
 
  ("/Users/neil/Projects/personal/docker-test/" (22165 5938 0 0) "Dockerfile~" "blah/" "../" "./")
-
- ("/Users/neil/Projects/personal/" (22166 25120 0 0) "todos/" "otto-test/" "mylights/" "docker-test/" "../" "./")
-
- ("/Users/neil/Projects/dts/stations/app/" (22163 57324 0 0) "workers/" "views/" "uploaders/" "presenters/" "policies/" "models/" "mailers/" "inputs/" "helpers/" "controllers/" "assets/" ".DS_Store" "../" "./")
 
  ("/Users/neil/Projects/dts/stations/app/assets/" (21918 57623 0 0) "stylesheets/" "javascripts/" "images/" "fonts/" "../" "./")
 
  ("/Users/neil/Projects/dts/stations/app/assets/stylesheets/" (22164 13618 0 0) "stations.scss~" "stations.scss" "smartadmin-skins.scss" "search.scss" "people.scss" "layout.scss" "icons.scss" "genres.css.scss" "format_mappings.css.scss" "fonts.scss" "devise.scss" "dashboard.scss" "application.scss" "_variables.scss" "_overrides.scss" "../" "./")
 
- ("/Users/neil/Projects/dts/stations/test/" (22130 55674 0 0) "test_helper.rb" "tasks/" "models/" "fixtures/" "factories/" "controllers/" ".DS_Store" "../" "./")
-
- ("/Users/neil/Projects/dts/stations/test/controllers/" (22163 63927 0 0) "stations_controller_test.rb" "station_license_agreements_controller_test.rb" "station_data_services_controller_test.rb" "people_controller_test.rb~" "genres_controller_test.rb" "format_mappings_controller_test.rb" "devices_controller_test.rb" "dashboards_controller_test.rb" "channels_controller_test.rb" "application_controller_test.rb" "../" "./")
-
  ("/Users/" (22028 15058 0 0) "Shared/" "neil/" "Guest/" ".localized" "../" "./")
-
- ("/Users/neil/Projects/" (22156 13621 0 0) "scorebrd/" "personal/" "lucidus/" "dts/" ".DS_Store" "../" "./")
-
- ("/Users/neil/Projects/dts/" (22126 11974 0 0) "vuejs/" "stations/" "javascript/" "hdm/" "ads/" ".DS_Store" "../" "./")
 
  ("/Users/neil/scorebrd/rajeev/stations-admin/" (21918 35781 0 0) "../" "./")
 
@@ -158,8 +262,6 @@
 
  ("/Users/neil/work/scorebrd/obir/app/views/courses/" (21882 52882 0 0) "show.json.jbuilder" "show.html.haml" "new.html.erb" "index.json.jbuilder" "index.html.haml" "edit.html.erb" "_form.html.erb" "_course_file_fields.html.erb" "../" "./")
 
- ("/etc/" (21880 43744 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sudoers" "sshd_config~previous" "sshd_config" "ssh_config~orig" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolver/" "resolv.conf" "rc.netboot" "rc.imaging" "rc.common" "racoon/" "protocols" "profile" "ppp/" "postgres-reg.ini" "postfix/" "phptest.php" "php.ini.default-5.2-previous~orig" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd~orig" "passwd" "pam.d/" "openssl/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "moduli~previous" "moduli" "master.passwd~orig" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab" "kern_loader.conf" "irbrc" "hosts~orig" "hosts.mamp.bak" "hosts.equiv" "hosts" "group~previous" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "bashrc" "autofs.conf" "auto_master" "auto_home" "authorization.deprecated" "asl.conf" "asl/" "apache2/" "ansible/" "aliases.db" "aliases" "afpovertcp.cfg" ".qpmd8381.bin" "../" "./")
-
  ("/Users/neil/work/scorebrd/stations-admin/" (21879 21252 0 0) "vendor/" "tmp/" "test/" "script/" "README.rdoc" "README.md" "Rakefile" "public/" "Procfile" "log/" "lib/" "ibiquity.sublime-workspace" "Guardfile" "Gemfile.lock" "Gemfile" "doc/" "db/" "coverage/" "config.ru" "config/" "Capfile" "bin/" "app/" ".ruby-version" ".rubocop_todo.yml" ".rubocop.yml" ".rspec" ".powrc" ".powenv" ".gitignore" ".git/" ".DS_Store" ".bundle/" "../" "./")
 
  ("/Users/neil/work/scorebrd/stations-admin/db/" (21879 21156 0 0) "test.sqlite3" "schema.rb.orig" "schema.rb" "migrate/" "export_dev.sqlite3" "dummies.rb" "development.sqlite3" "dbf/" "#schema.rb#" "../" "./")
@@ -176,10 +278,6 @@
 
  ("/usr/local/var/" (21809 28918 0 0) "run/" "postgres.bak/" "postgres/" "mysql/" "mongodb/" "log/" "db/" "../" "./")
 
- ("/usr/local/" (21876 26136 0 0) "var/" "SUPPORTERS.md" "ssl/" "share/" "sbin/" "README.md" "pear/" "opt/" "LICENSE.txt" "Library/" "lib/" "include/" "heroku/" "foreman/" "etc/" "CONTRIBUTING.md" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".yardopts" ".gitignore" ".git/" "../" "./")
-
- ("/usr/" (21474 61267 0 0) "X11R6/" "X11/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "../" "./")
-
  ("/Users/neil/scorebrd/pgloader/" (21876 51558 0 0) "commands.load~" "commands.load" ".ruby-version" "../" "./")
 
  ("/Users/neil/work/scorebrd/pgloader/" (21876 31565 0 0) "commands.load~" "commands.load" ".ruby-version" ".#commands.load" "#commands.load#" "../" "./")
@@ -191,40 +289,6 @@
  ("/Users/neil/scorebrd/mysql2postgres/" (21876 26760 0 0) "test/" "README.md" "Rakefile" "mysqltopostgres.gemspec" "mysqltopostgres-0.2.20.gem" "MIT-LICENSE" "lib/" "Gemfile.lock" "Gemfile" "config/" "bin/" ".travis.yml" ".ruby-version~" ".ruby-version" ".gitignore" ".git/" "../" "./")
 
  ("/Users/neil/work/scorebrd/mylights/app/assets/javascripts/" (21856 41806 0 0) "videos.js.coffee" "static_pages.js.coffee" "main.js.coffee" "highlights.js.coffee" "application.js" "accounts.js.coffee" "../" "./")
-
- ("/Users/neil/work/scorebrd/mylights/app/assets/" (21393 51138 0 0) "stylesheets/" "javascripts/" "images/" "fonts/" ".DS_Store" "../" "./")
-
- ("/Users/neil/work/scorebrd/mylights/app/" (21856 42061 0 0) "views/" "policies/" "models/" "mailers/" "helpers/" "controllers/" "assets/" ".DS_Store" "../" "./")
-
- ("/Users/neil/work/scorebrd/stations-admin/app/models/" (21873 8269 0 0) "station_owner_address.rb" "station_owner.rb" "station_license_agreement.rb" "station_export.rb" "station_data_service.rb" "station_count_snapshot.rb" "station.rb" "software.rb" "rebroadcast_type.rb" "nielsen_market.rb" "mod_status.rb" "location.rb" "language.rb" "importer_sla.rb" "importer_manufacturer.rb" "hd_channel.rb" "genre.rb" "format_mapping.rb" "export_database.rb" "exciter_sla.rb" "exciter_manufacturer.rb" "data_service.rb" "content_type.rb" "contact.rb" "company.rb" "bia_station_address.rb" "bia_station.rb" "bia_import_error.rb" "bia_import.rb" "artist_experience.rb" "admin_user.rb" "ability.rb" ".gitkeep" ".DS_Store" "#station_license_agreement.rb#" "../" "./")
-
- ("/Users/neil/.emacs.d/.cask/" (21872 30350 0 0) "24.5.1/" "../" "./")
-
- ("/Users/neil/.emacs.d/.cask/24.5.1/" (21872 30419 0 0) "elpa/" "bootstrap/" "../" "./")
-
- ("/Users/neil/.emacs.d/.cask/24.5.1/elpa/" (21873 5273 0 0) "yasnippet-20150415.244/" "yaml-mode-20141125.37/" "textile-mode-20120721.1258/" "solarized-theme-20150424.53/" "smex-20141210.1422/" "smartparens-20150603.948/" "shut-up-20150423.522/" "shell-pop-20150601.1904/" "sass-mode-20150508.2012/" "s-20140910.334/" "ruby-tools-20140113.45/" "ruby-guard-20141218.1914/" "rubocop-20150511.158/" "rbenv-20141119.2349/" "rake-20150124.728/" "projectile-rails-20150422.829/" "projectile-20150602.557/" "powerline-20150602.1413/" "popup-20150315.612/" "pkg-info-20150517.443/" "pallet-20150512.2/" "package-build-20150603.1934/" "multiple-cursors-20150528.2303/" "motion-mode-20140919.1856/" "mo-git-blame-20140409.320/" "maxframe-20140916.754/" "markdown-mode-20150603.1303/" "magit-20150525.1145/" "lua-mode-20150518.942/" "js2-mode-20150524.426/" "inflections-20121016.157/" "inf-ruby-20150602.1153/" "ido-ubiquitous-20150528.2322/" "ido-completing-read+-20150528.2322/" "htmlize-20130207.1202/" "highlight-indentation-20150307.208/" "haml-mode-20150508.2011/" "grizzl-20150312.1043/" "git-rebase-mode-20150122.1114/" "git-commit-mode-20150330.1048/" "flymake-easy-20140818.55/" "flymake-cursor-20130822.1032/" "flx-isearch-20150529.1732/" "flx-ido-20140821.2033/" "flx-20140921.739/" "feature-mode-20141121.1030/" "f-20150217.328/" "expand-region-20150525.205/" "epl-20150517.433/" "dropdown-list-20120329.1636/" "dired-details-20130824.1158/" "dired-details+-20150104.2150/" "dash-at-point-20140626.35/" "dash-20150513.1027/" "coffee-mode-20150602.2205/" "cask-20150528.752/" "bundler-20150527.646/" "browse-kill-ring-20150518.1312/" "browse-kill-ring+-20150104.2132/" "auto-complete-20150408.1132/" "archives/" "ag-20150518.1245/" "../" "./")
-
- ("/Users/neil/.emacs.d/.cask/24.5.1/elpa/rubocop-20150511.158/" (21873 5274 0 0) "rubocop.elc" "rubocop.el" "rubocop-pkg.elc" "rubocop-pkg.el" "rubocop-autoloads.el~" "rubocop-autoloads.el" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/" (21872 43060 0 0) "vendor/" "tmp/" "test/" "README.md" "Rakefile" "public/" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "docs/" "db/" "coverage/" "config.ru" "config/" "Capfile" "bin/" "app/" ".ruby-version" ".gitignore" ".git/" ".DS_Store" ".capistrano/" ".bundle/" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/app/" (21862 10410 0 0) "workers/" "views/" "validators/" "policies/" "models/" "mailers/" "lib/" "helpers/" "controllers/" "assets/" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/app/assets/" (21769 55490 0 0) "stylesheets/" "javascripts/" "images/" "fonts/" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/app/assets/stylesheets/" (21862 10410 0 0) "tabs.css.scss" "stations.css.scss" "station_monitors.css.scss" "smartadmin-skins.scss" "smartadmin/" "scaffolds.scss" "scaffolds.css.scss" "query_results.css.scss" "query_requests.css.scss" "proxy_pools.scss" "proxies.css.scss" "mib_objects.css.scss" "markets.css.scss" "layout.css.scss" "global.css.scss" "fonts.css.scss" "devise.css.scss" "application.css.scss" "_variables.scss" "../" "./")
-
- ("/Users/neil/work/scorebrd/stations-admin/test/" (21871 21428 0 0) "test_helper.rb" "models/" "fixtures/" "factories/" "controllers/" "../" "./")
-
- ("/Users/neil/work/scorebrd/stations-admin/test/models/" (21872 41253 0 0) "station_license_agreement_test.rb" "../" "./")
-
- ("/Users/neil/work/scorebrd/stations-admin/app/" (21869 45778 0 0) "workers/" "views/" "uploaders/" "presenters/" "models/" "mailers/" "inputs/" "helpers/" "controllers/" "assets/" "admin/" ".DS_Store" "../" "./")
-
- ("/Users/neil/work/" (21373 62985 0 0) "scorebrd/" "rubyloco/" "lucidus/" ".DS_Store" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/test/" (21862 18671 0 0) "test_helper.rb" "policies/" "models/" "mailers/" "integration/" "helpers/" "fixtures/" "features/" "factories/" "controllers/" ".DS_Store" "../" "./")
-
- ("/Users/neil/work/scorebrd/hdm/test/fixtures/" (21863 27427 0 0) "station_json/" "result.json" "mib_objects.json" "mib_objects.csv" ".keep" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

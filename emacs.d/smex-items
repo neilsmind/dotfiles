@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- scss-mode
- package-install
- sass-mode
- magit-log-buffer-file
- projectile-remove-known-project
+ uncomment-region
+ comment-region
+ ag
+ server-force-delete
  align-regexp
- copy-file
+ haml-mode
+ scss-mode
 )
 
 ;; ----- smex-data -----
@@ -29,21 +29,21 @@
  (column-number-mode . 2)
  (dash-at-point . 2)
  (rubocop-autocorrect-current-file . 1)
- (comment-region . 14)
- (uncomment-region . 16)
+ (comment-region . 18)
+ (uncomment-region . 20)
  (package-list-packages . 15)
- (shell-mode . 1)
+ (shell-mode . 2)
  (toggle-word-wrap . 4)
  (rename-file . 22)
  (coffee-mode . 2)
- (align-regexp . 15)
+ (align-regexp . 16)
  (align . 1)
  (sass-mode . 17)
  (common-lisp-mode . 1)
  (ruby-mode . 2)
  (save-buffer . 1)
  (replace-regexp . 1)
- (haml-mode . 1)
+ (haml-mode . 2)
  (floobits-add-to-workspace . 1)
  (floobits-share-dir-private . 1)
  (floobits-summon . 2)
@@ -66,4 +66,6 @@
  (projectile-remove-known-project . 1)
  (magit-log-buffer-file . 2)
  (scss-mode . 1)
+ (server-force-delete . 1)
+ (ag . 11)
 )
