@@ -7,3 +7,5 @@
   template = ~/.gitmessage
 [fetch]
   prune = true
+[core]
+    excludesfile = ~/.gitignore
