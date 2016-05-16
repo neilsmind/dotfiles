@@ -1,4 +1,0 @@
-(setenv "DOCKER_TLS_VERIFY" "1")
-(setenv "DOCKER_HOST" "tcp://192.168.99.100:2376")
-(setenv "DOCKER_CERT_PATH" (expand-file-path "~/.docker/machine/machines/default"))
-(setenv "DOCKER_MACHINE_NAME" "default")
