@@ -5,4 +5,6 @@
 [fetch]
   prune = true
 [core]
-    excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
+[include]
+	path = ~/.gitconfig_local
