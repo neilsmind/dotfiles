@@ -5,6 +5,9 @@
   'cmd-w': 'core:copy'
   'ctrl-g': 'core:cancel'
 
+'.platform-darwin':
+  'ctrl-g': 'unset!'
+
 'atom-workspace':
   'cmd-0': 'pane:close'
   'cmd-1': 'emacs-plus:close-other-panes'
