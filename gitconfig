@@ -1,8 +1,5 @@
 [color]
 	ui = true
-[user]
-	name = neilsmind
-	email = neil@neilsmind.com
 [commit]
   template = ~/.gitmessage
 [fetch]
