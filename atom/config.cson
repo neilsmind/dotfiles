@@ -1,0 +1,16 @@
+"*":
+  "atom-alignment":
+    alignBy: [
+      "=>"
+      ":="
+      "="
+    ]
+  core:
+    packagesWithKeymapsDisabled: [
+      "emacs-plus"
+    ]
+    projectHome: "/Users/neil/Sites"
+  "exception-reporting":
+    userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
+  welcome:
+    showOnStartup: false

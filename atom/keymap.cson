@@ -1,0 +1,75 @@
+'body':
+  'ctrl-v': 'core:page-down'
+  'cmd-v': 'core:page-up'
+  'ctrl-w': 'core:cut'
+  'cmd-w': 'core:copy'
+  'ctrl-g': 'core:cancel'
+
+'atom-workspace':
+  'cmd-0': 'pane:close'
+  'cmd-1': 'emacs-plus:close-other-panes'
+  'cmd-2': 'pane:split-down-and-copy-active-item'
+  'cmd-3': 'pane:split-right-and-copy-active-item'
+  'cmd-b': 'fuzzy-finder:toggle-buffer-finder'
+  'cmd-o': 'window:focus-next-pane'
+  'cmd-k': 'core:close'
+  'ctrl-x ctrl-c': 'application:quit'
+  'ctrl-x ctrl-f': 'advanced-open-file:toggle'
+  'ctrl-x ctrl-j': 'tree-view:reveal-active-file'
+  'ctrl-x k': 'core:close'
+
+'atom-workspace atom-text-editor':
+  'ctrl-/': 'core:undo'
+  'ctrl-cmd-/': 'core:redo'
+  'ctrl-y': 'core:paste'
+  'ctrl-g': 'editor:consolidate-selections'
+  'cmd-b': 'editor:move-to-beginning-of-word'
+  'cmd-f': 'editor:move-to-end-of-word'
+  'ctrl-x ctrl-l': 'editor:lower-case'
+  'ctrl-x ctrl-u': 'editor:upper-case'
+
+'atom-workspace atom-text-editor.emacs-plus:not([mini])':
+  'cmd-<':         'core:move-to-top'
+  'cmd->':         'core:move-to-bottom'
+  'cmd-backspace': 'emacs-plus:backward-kill-word'
+  'cmd-c':         'emacs-plus:capitalize-word'
+  'ctrl-space':    'emacs-plus:set-mark'
+  'ctrl-s':        'find-and-replace:show'
+  'ctrl-w':        'emacs-plus:kill-region'
+  'ctrl-x ctrl-s': 'core:save'
+  'ctrl-x ctrl-t': 'emacs-plus:transpose-lines'
+  'cmd-g':         'go-to-line:toggle'
+
+'atom-workspace atom-text-editor.emacs-plus.mark-mode:not([mini])':
+  'cmd-<':     'core:select-to-top'
+  'cmd->':     'core:select-to-bottom'
+  'cmd-b':     'editor:select-to-beginning-of-word'
+  'cmd-f':     'editor:select-to-end-of-word'
+  'cmd-left':  'editor:select-to-beginning-of-word'
+  'cmd-right': 'editor:select-to-end-of-word'
+  'cmd-v':     'core:select-page-up'
+  'cmd-{':     'editor:select-to-beginning-of-previous-paragraph'
+  'cmd-}':     'editor:select-to-beginning-of-next-paragraph'
+  'ctrl-a':    'editor:select-to-beginning-of-line'
+  'ctrl-b':    'core:select-left'
+  'ctrl-e':    'editor:select-to-end-of-line'
+  'ctrl-f':    'core:select-right'
+  'ctrl-g':    'core:cancel'
+  'ctrl-n':    'core:select-down'
+  'ctrl-p':    'core:select-up'
+  'ctrl-v':    'core:select-page-down'
+  'down':      'core:select-down'
+  'left':      'core:select-left'
+  'right':     ':select-right'
+  'up':        'core:select-up'
+
+'.find-and-replace':
+  'ctrl-r': 'find-and-replace:find-previous'
+  'ctrl-s': 'find-and-replace:find-next'
+  'ctrl-g': 'find-and-replace:close'
+
+# autocomplete-plus
+'atom-workspace atom-text-editor:not(mini).emacs-plus.autocomplete-active':
+  'ctrl-g': 'autocomplete-plus:cancel'
+  'ctrl-m': 'autocomplete-plus:confirm'
+  'enter': 'autocomplete-plus:confirm'
