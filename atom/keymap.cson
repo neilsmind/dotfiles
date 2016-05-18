@@ -7,7 +7,8 @@
 
 '.platform-darwin':
   'ctrl-g': 'unset!'
-
+  'alt-o': 'application:open'
+  
 'atom-workspace':
   'cmd-0': 'pane:close'
   'cmd-1': 'emacs-plus:close-other-panes'
