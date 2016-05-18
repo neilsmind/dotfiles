@@ -10,6 +10,9 @@
       "emacs-plus"
     ]
     projectHome: "/Users/neil/Sites"
+  editor:
+    autoIndentOnPaste: false
+    showIndentGuide: true
   "exception-reporting":
     userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
   welcome:
