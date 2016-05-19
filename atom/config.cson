@@ -16,5 +16,9 @@
     showIndentGuide: true
   "exception-reporting":
     userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
+  linter:
+    showErrorPanel: false
+  "linter-rubocop":
+    command: "/Users/neil/.rbenv/versions/2.3.1/bin/rubocop --config /Users/neil/.rubocop.yml"
   welcome:
     showOnStartup: false
