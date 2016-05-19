@@ -6,5 +6,6 @@
   prune = true
 [core]
   excludesfile = ~/.gitignore
+	editor = atom --wait
 [include]
 	path = ~/.gitconfig_local
