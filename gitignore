@@ -49,3 +49,4 @@ Thumbs.db
 !/atom/keymap.cson
 !/atom/snippets.cson
 !/atom/styles.less
+!/atom/packages.cson
