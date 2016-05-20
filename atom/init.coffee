@@ -10,3 +10,11 @@
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
 process.env.PATH = "#{process.env.HOME}/.rbenv/shims:#{process.env.HOME}/.rbenv/bin:#{process.env.PATH}"
+
+atom.commands.add 'atom-text-editor', 'markdown:past-as-link', ->
+  return unless editor = atom.workspace.getActiveTextEditor()
+
+  selection = editor.getLastSelection()
+  clipboardText = atom.clipboard.read()
+
+  selection.insertText("[#{selection.getText()}](#{clipboardText})")
