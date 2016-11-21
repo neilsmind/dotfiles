@@ -14,10 +14,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git gem rails rand-quote docker)
 
 # User configuration
-export PATH="$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="./node_modules/.bin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.console/console.rc" 2>/dev/null
@@ -40,13 +37,11 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias b="bundle"
-alias bi="b install --path vendor"
-alias bil="bi --local"
-alias bu="b update"
-alias be="b exec"
-alias binit="bi && bundle package"
-alias ba="bundle-audit update && bundle-audit"
+alias b="dcr web bundle"
+alias bi="dcr web b install"
+alias bil="dcr web bi --local"
+alias bu="dcr web b update"
+alias be="dcr web b exec"
 alias prettyjson='python -mjson.tool'
 
 alias dc='docker-compose'
