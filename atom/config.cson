@@ -5,20 +5,53 @@
       ":="
       "="
     ]
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Blue"
+    fonts: {}
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
+    disabledPackages: [
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-objective-c"
+      "language-perl"
+      "language-toml"
+      "atom-hide-tabs"
+      "tabs"
+    ]
     packagesWithKeymapsDisabled: [
       "emacs-plus"
       "git-blame"
     ]
     projectHome: "/Users/neil/Sites"
+    telemetryConsent: "limited"
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
   editor:
     autoIndentOnPaste: false
     showIndentGuide: true
   "exception-reporting":
     userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
+  "language-babel":
+    autoIndentJSX: true
   linter:
     showErrorPanel: false
   "linter-rubocop":
     command: "/Users/neil/.rbenv/versions/2.3.1/bin/rubocop --config /Users/neil/.rubocop.yml"
+  riot:
+    compileOnSave: false
+  "tree-view": {}
   welcome:
     showOnStartup: false

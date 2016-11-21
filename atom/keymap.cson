@@ -8,7 +8,7 @@
 '.platform-darwin':
   'ctrl-g': 'unset!'
   'alt-o': 'application:open'
-  
+
 'atom-workspace':
   'cmd-0': 'pane:close'
   'cmd-1': 'emacs-plus:close-other-panes'
@@ -36,7 +36,8 @@
   'cmd-<':         'core:move-to-top'
   'cmd->':         'core:move-to-bottom'
   'cmd-backspace': 'emacs-plus:backward-kill-word'
-  'cmd-c':         'emacs-plus:capitalize-word'
+  # 'cmd-c':         'emacs-plus:capitalize-word'
+
   'ctrl-space':    'emacs-plus:set-mark'
   'ctrl-s':        'find-and-replace:show'
   'ctrl-w':        'emacs-plus:kill-region'

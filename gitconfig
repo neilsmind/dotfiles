@@ -9,3 +9,6 @@
 	editor = atom --wait
 [include]
 	path = ~/.gitconfig_local
+[user]
+	name = Neil Giarratana
+	email = neil@neilsmind.com
