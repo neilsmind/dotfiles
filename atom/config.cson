@@ -49,7 +49,7 @@
   linter:
     showErrorPanel: false
   "linter-rubocop":
-    command: "/Users/neil/.rbenv/versions/2.3.1/bin/rubocop --config /Users/neil/.rubocop.yml"
+    command: "/usr/local/bin/rubocop --config /Users/neil/.rubocop.yml"
   riot:
     compileOnSave: false
   "tree-view": {}
