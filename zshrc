@@ -48,3 +48,6 @@ alias dc='docker-compose'
 alias dcr='docker-compose run --rm'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Source local extra (private) settings specific to machine if it exists
+[ -f ~/.zsh.local ] && source ~/.zsh.local
