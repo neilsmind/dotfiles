@@ -12,3 +12,5 @@
 [user]
 	name = Neil Giarratana
 	email = neil@neilsmind.com
+[push]
+	default = current
