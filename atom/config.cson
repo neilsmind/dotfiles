@@ -27,7 +27,6 @@
       "language-perl"
       "language-toml"
       "atom-hide-tabs"
-      "tabs"
     ]
     packagesWithKeymapsDisabled: [
       "emacs-plus"
@@ -41,6 +40,7 @@
     ]
   editor:
     autoIndentOnPaste: false
+    fontSize: 12
     showIndentGuide: true
   "exception-reporting":
     userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
@@ -50,6 +50,8 @@
     showErrorPanel: false
   "linter-rubocop":
     command: "/usr/local/bin/rubocop --config /Users/neil/.rubocop.yml"
+  "markdown-pdf":
+    format: "Letter"
   riot:
     compileOnSave: false
   "tree-view": {}
