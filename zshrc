@@ -14,7 +14,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git gem rails rand-quote docker)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.console/console.rc" 2>/dev/null
