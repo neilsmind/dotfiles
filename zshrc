@@ -47,6 +47,11 @@ alias prettyjson='python -mjson.tool'
 
 alias dc='docker-compose'
 alias dcr='docker-compose run --rm'
+alias dbstart='docker run -p 8000:8000 -d --rm --name dynamodb-localhost -v ~/.docker/volumes/dynamodb:/var/dynamodb_data ryanratcliff/dynamodb'
+alias dbstop='docker stop dynamodb-localhost'
+
+alias pgstart='docker run -p 5432:5432 -d --rm --name postgres-localhost -v ~/.docker/volumes/pg/9.5:/var/lib/postgresql/data postgres:9.5'
+alias pgstop='docker stop postgres-localhost'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
