@@ -14,7 +14,8 @@ ZSH_THEME="robbyrussell"
 plugins=(gem rails rand-quote docker)
 
 # User configuration
-export PATH="/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="$HOME/.nodenv/shims:/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+eval "$(rbenv init -)"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.console/console.rc" 2>/dev/null
