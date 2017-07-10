@@ -14,8 +14,8 @@ ZSH_THEME="robbyrussell"
 plugins=(gem rails rand-quote docker)
 
 # User configuration
-export PATH="$HOME/.nodenv/shims:/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-eval "$(rbenv init -)"
+export PATH="/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:node_modules/.bin:`yarn global bin`"
+eval "$(nodenv init -)"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.console/console.rc" 2>/dev/null
@@ -39,10 +39,14 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias b="dcr web bundle"
-alias bi="dcr web b install"
-alias bil="dcr web bi --local"
-alias bu="dcr web b update"
-alias be="dcr web b exec"
+alias bi="b install"
+alias bil="bi --local"
+alias bu="b update"
+alias be="b exec"
+alias rails="be rails"
+alias rake="be rake"
+alias guard="be guard"
+
 alias prettyjson='python -mjson.tool'
 
 alias dc='docker-compose'
@@ -50,8 +54,17 @@ alias dcr='docker-compose run --rm'
 alias dbstart='docker run -p 8000:8000 -d --rm --name dynamodb-localhost -v ~/.docker/volumes/dynamodb:/var/dynamodb_data ryanratcliff/dynamodb'
 alias dbstop='docker stop dynamodb-localhost'
 
-alias pgstart='docker run -p 5432:5432 -d --rm --name postgres-localhost -v ~/.docker/volumes/pg/9.5:/var/lib/postgresql/data postgres:9.5'
-alias pgstop='docker stop postgres-localhost'
+alias g="git"
+alias gb="git branch -a -v"
+alias gc="git commit -v"
+alias gco="git checkout"
+alias gca="git commit -v -a"
+alias gd="git diff"
+alias gl="git pull"
+alias glr="git pull --rebase"
+alias gf="git fetch"
+alias gp="git push"
+alias gs="git status -sb"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -59,3 +72,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -f ~/.zsh.local ] && source ~/.zsh.local
 
 eval "$(direnv hook zsh)"
+
+eval "$(hub alias -s)"
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit && compinit

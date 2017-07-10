@@ -3,7 +3,7 @@
 [fetch]
   prune = true
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/neil/.gitignore
 	editor = code --wait
 [include]
 	path = ~/.gitconfig_local
@@ -13,7 +13,7 @@
 [push]
 	default = current
 [alias]
-	branches = branch -a
+	branches = branch -a -v
 	tags = tag
 	stashes = stash list
 	unstage = reset -q HEAD --
@@ -26,3 +26,13 @@
 	remotes = remote -v
 [merge]
 	tool = code
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

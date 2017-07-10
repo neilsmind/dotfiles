@@ -4,11 +4,14 @@
 *.sw[nop]
 .bundle
 .env
+.envrc
+.vscode/*
+typings/*
 log/*.log
 rerun.txt
-tags
 tmp/**/*
 !tmp/cache/.keep
+*.http
 
 # Packages #
 ############

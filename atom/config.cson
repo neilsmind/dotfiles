@@ -27,6 +27,7 @@
       "language-perl"
       "language-toml"
       "atom-hide-tabs"
+      "project-viewer"
     ]
     packagesWithKeymapsDisabled: [
       "emacs-plus"
@@ -34,13 +35,9 @@
     ]
     projectHome: "/Users/neil/Sites"
     telemetryConsent: "limited"
-    themes: [
-      "seti-ui"
-      "monokai-seti"
-    ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 12
+    fontSize: 16
     showIndentGuide: true
   "exception-reporting":
     userId: "461220bc-8c0f-5173-97f2-8c64d4c57145"
@@ -52,6 +49,12 @@
     command: "/usr/local/bin/rubocop --config /Users/neil/.rubocop.yml"
   "markdown-pdf":
     format: "Letter"
+  "one-dark-ui":
+    tabSizing: "Minimum"
+  "project-viewer":
+    customWidth: 385
+    disclaimer:
+      v109: false
   riot:
     compileOnSave: false
   "tree-view": {}
