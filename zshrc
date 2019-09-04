@@ -1,78 +1,61 @@
-# Path to your oh-my-zsh installation.
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+PATH="$PATH:$(yarn global bin)"
+PATH="$PATH:$(npm -g bin)"
+
+export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
 export ZSH=/Users/neil/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(gem rails rand-quote docker)
-
-# User configuration
-export PATH="/Users/neil/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:node_modules/.bin:`yarn global bin`"
-eval "$(nodenv init -)"
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source "$HOME/.console/console.rc" 2>/dev/null
+
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='code'
+else
+  export EDITOR='mvim'
+fi
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+alias dynamodb-start="docker run -d --rm -p 8000:8000 -v ~/.dynamodb/data:/var/dynamodb_data --network lambda-local --name dynamodb cnadiminti/dynamodb-local"
+alias dynamodb-stop="docker stop dynamodb"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias b="dcr web bundle"
-alias bi="b install"
-alias bil="bi --local"
-alias bu="b update"
-alias be="b exec"
-alias rails="be rails"
-alias rake="be rake"
-alias guard="be guard"
+alias mysql-start="docker run -d --rm -p 3306:3306 -v ~/.mysql/data:/var/lib/mysql --name mysql mysql"
+alias mysql-stop="docker stop mysql"
 
-alias prettyjson='python -mjson.tool'
+alias httpd-start="docker run -d --rm -p 80:80 -p 443:443 -v \"$PWD\":/var/www/html --name httpd"
+alias httpd-stop="docker stop httpd"
 
-alias dc='docker-compose'
-alias dcr='docker-compose run --rm'
-alias dbstart='docker run -p 8000:8000 -d --rm --name dynamodb-localhost -v ~/.docker/volumes/dynamodb:/var/dynamodb_data ryanratcliff/dynamodb'
-alias dbstop='docker stop dynamodb-localhost'
+alias elasticsearch-start="docker run -d --rm -p 9200:9200  -v ~/.elasticsearch/data:/usr/share/elasticsearch/data -e \"http.host=0.0.0.0\" -e \"transport.host=127.0.0.1\" -e \"xpack.security.enabled=false\" --name elasticsearch docker.elastic.co/elasticsearch/elasticsearch:5.5.2"
+alias elasticsearch-stop="docker stop elasticsearch"
 
-alias g="git"
-alias gb="git branch -a -v"
-alias gc="git commit -v"
-alias gco="git checkout"
-alias gca="git commit -v -a"
-alias gd="git diff"
-alias gl="git pull"
-alias glr="git pull --rebase"
-alias gf="git fetch"
-alias gp="git push"
-alias gs="git status -sb"
+alias dejavu-start="docker run -p 1358:1358 -d --name dejavu appbaseio/dejavu"
+alias dejavu-stop="docker stop dejavu"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+alias jenkins-start="docker run -d --rm -p 8080:8080 -p 50000:50000 -v ~/.jenkins:/var/jenkins_home --name jenkins jenkins/jenkins:latest"
+alias jenkins-stop="docker stop jenkins"
 
-# Source local extra (private) settings specific to machine if it exists
-[ -f ~/.zsh.local ] && source ~/.zsh.local
+alias postgres-start="docker run --rm -d -p 5432:5432 -v ~/.postgres/data:/var/lib/postgresql/data --name postgres postgres:9.5"
+alias postgres-stop="docker stop postgres"
+
+alias bfg="java -jar ~/Library/BFG/bfg-1.12.16.jar"
+
+alias s3="aws s3"
+alias cloudformation="aws cloudformation"
+
+if [ `which hub 2> /dev/null` ]; then
+  alias git="hub"
+fi
 
 eval "$(direnv hook zsh)"
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(pyenv init -)"
+eval "$(nodenv init -)"
 
-eval "$(hub alias -s)"
-fpath=(~/.zsh/completions $fpath)
-autoload -U compinit && compinit
+source "/Users/neil/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
