@@ -5,9 +5,9 @@ PATH="$PATH:$(yarn global bin)"
 PATH="$PATH:$(npm -g bin)"
 
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
-export ZSH=/Users/neil/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
 
 plugins=(git)
 
@@ -58,4 +58,4 @@ eval "$(nodenv init -)"
 eval "$(pyenv init -)"
 eval "$(nodenv init -)"
 
-source "/Users/neil/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "$HOME/.oh-my-zsh/themes/agnoster.zsh-theme"
