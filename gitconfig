@@ -7,9 +7,6 @@
 	editor = code --wait
 [include]
 	path = ~/.gitconfig_local
-[user]
-	name = Neil Giarratana
-	email = neil@neilsmind.com
 [push]
 	default = current
 [alias]
