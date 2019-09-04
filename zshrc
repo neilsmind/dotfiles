@@ -4,6 +4,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 PATH="$PATH:$(yarn global bin)"
 PATH="$PATH:$(npm -g bin)"
 
+export DEFAULT_USER=`whoami`
+
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
