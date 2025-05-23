@@ -1,0 +1,87 @@
+# Environment Variables
+export LANG=en_US.UTF-8
+export DEFAULT_USER=`whoami`
+export ZSH=$HOME/.oh-my-zsh
+
+# Path Configuration
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+PATH="$PATH:$(yarn global bin)"
+PATH="$PATH:$(npm -g bin)"
+PATH="$PATH:$HOME/.moon/bin"
+PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+PATH="$PATH:/opt/homebrew/opt/openssl@1.1/bin:"
+PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
+function cm() {
+  chezmoi "$@"
+}
+
+# OpenSSL Configuration
+export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
+
+export PYTHONPATH="/opt/homebrew/lib/python3.9/site-packages:$PYTHONPATH"
+
+# Oh My Zsh Configuration
+ZSH_THEME="agnoster"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+source "$HOME/.oh-my-zsh/themes/agnoster.zsh-theme"
+
+# Development Environment Setup
+# NVM Configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+
+# Editor Configuration
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='code'
+else
+  export EDITOR='mvim'
+fi
+
+# Docker Network Setup
+docker network inspect lambda-local >/dev/null 2>&1 || \
+    docker network create --driver bridge lambda-local
+
+# Docker Service Aliases
+# DynamoDB
+alias dynamodb-start="docker run -d --rm -p 8000:8000 -v ~/.dynamodb/data:/var/dynamodb_data --network lambda-local --name dynamodb cnadiminti/dynamodb-local"
+alias dynamodb-stop="docker stop dynamodb"
+
+# Elasticsearch
+alias elasticsearch-start="docker run -d --rm -p 9200:9200  -v ~/.elasticsearch/data:/usr/share/elasticsearch/data -e \"http.host=0.0.0.0\" -e \"transport.host=127.0.0.1\" -e \"xpack.security.enabled=false\" --name elasticsearch docker.elastic.co/elasticsearch/elasticsearch:5.5.2"
+alias elasticsearch-stop="docker stop elasticsearch"
+
+# Dejavu - Elasticsearch UI
+alias dejavu-start="docker run -p 1358:1358 -d --name dejavu appbaseio/dejavu"
+alias dejavu-stop="docker stop dejavu"
+
+# PostgreSQL
+alias postgres-start="docker run --rm -d -p 5432:5432 -v ~/.postgres/data:/var/lib/postgresql/data --name postgres postgres:9.5"
+alias postgres-stop="docker stop postgres"
+
+# Mongo
+alias mongo-start="docker run --rm -d -p 27017:27017 -v ~/.mongo/data:/data/db \
+  -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret \
+  --name mongo mongo"
+alias mongo-stop="docker stop mongo"
+
+# AWS CLI Aliases
+alias s3="aws s3"
+alias cloudformation="aws cloudformation"
+
+# Git Configuration
+if [ `which hub 2> /dev/null` ]; then
+  alias git="hub"
+fi
+
+# Shell Integration
+eval "$(direnv hook zsh)"
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+eval "$(rbenv init - zsh)"
+
+eval "$(starship init zsh)"
