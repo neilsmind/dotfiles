@@ -1,8 +1,8 @@
-# 🗂️ My Dotfiles
+# 🗂️ My dotfiles
 
 This repository contains my personal dotfiles managed with [chezmoi](https://www.chezmoi.io/). I use this configuration to quickly set up my configuration on my machines.
 
-## 💻 What are Dotfiles?
+## 💻 What are dotfiles?
 
 Dotfiles are plain text configuration files that control the behavior of shells, editors, version control systems, and other tools on Unix-like systems. Keeping them in a version-controlled repository ensures a consistent environment across devices.
 
@@ -10,7 +10,7 @@ Dotfiles are plain text configuration files that control the behavior of shells,
 
 [chezmoi](https://www.chezmoi.io/) is a cross-platform dotfile manager that securely manages your personal configuration files. It allows you to track, template, and deploy your dotfiles to any machine with minimal effort.
 
-## 🚀 How to Install This Configuration
+## 🚀 How to install this configuration
 
 1. **Install chezmoi**  
    If you don't already have chezmoi installed, follow the instructions at [chezmoi.io/install](https://www.chezmoi.io/install/).
@@ -29,7 +29,7 @@ Dotfiles are plain text configuration files that control the behavior of shells,
 
    This will copy the managed dotfiles to the appropriate locations in your home directory.
 
-## 💡 Common chezmoi Commands
+## 💡 Common chezmoi commands
 
 | Command                        | Description                                 |
 | ------------------------------ | ------------------------------------------- |
