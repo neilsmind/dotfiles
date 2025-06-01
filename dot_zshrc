@@ -27,11 +27,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.oh-my-zsh/themes/agnoster.zsh-theme"
 
-# Development Environment Setup
-# NVM Configuration
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # Editor Configuration
 if [[ -n $SSH_CONNECTION ]]; then
