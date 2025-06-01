@@ -48,7 +48,7 @@ docker network inspect lambda-local >/dev/null 2>&1 || \
 
 # Docker Service Aliases
 # DynamoDB
-alias dynamodb-start="docker run -d --rm -p 8000:8000 -v ~/.dynamodb/data:/var/dynamodb_data --network lambda-local --name dynamodb cnadiminti/dynamodb-local"
+alias dynamodb-start="docker run -d --rm -p 8000:8000 -v ~/.dynamodb/data:/var/dynamodb_data --network lambda-local --name dynamodb amazon/dynamodb-local:latest"
 alias dynamodb-stop="docker stop dynamodb"
 
 # Elasticsearch
