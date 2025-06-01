@@ -20,8 +20,6 @@ function cm() {
 export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 
-export PYTHONPATH="/opt/homebrew/lib/python3.9/site-packages:$PYTHONPATH"
-
 # Oh My Zsh Configuration
 ZSH_THEME="agnoster"
 plugins=(git)
