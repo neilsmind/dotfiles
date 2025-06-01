@@ -43,6 +43,8 @@ Dotfiles are plain text configuration files that control the behavior of shells,
 | `chezmoi cd`                   | Open a shell in the chezmoi source dir      |
 | `chezmoi git <args>`           | Run git commands in the chezmoi source dir  |
 
+Note: I've added a function to alias `cm` to `chezmoi`
+
 ## 📚 Learn More
 
 - [chezmoi documentation](https://www.chezmoi.io/docs/)
