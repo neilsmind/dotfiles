@@ -1,46 +1,53 @@
-# Getting Started
+# dotfiles
 
-Clone this (or a forked version of this) repository.
+My dotfiles.
 
-    $ cd ~
-    $ git clone https://github.com/neilsmind/dotfiles.git .dotfiles
+## install
 
-**(Option 1)** If you'd like to symlink everything from this repository to your
-home directory, run `install.rb`. This will also sync and update all the git
-submodules within.
+Run this:
 
-    $ cd ~/.dotfiles
-    $ ./install.rb
-
-This install script is idempotent, meaning you can run it over and over again
-without fear of breaking anything. Use it as an installer or to upgrade after
-merging from an upstream fork.
-
-**(Option 2)** If you'd like to just symlink one or more configurations to your
-home directory manually, you can.
-
-    $ cd ~/.dotfiles
-    $ ln -ns atom   ~/.atom
-    $ ln -ns iterm2   ~/.iterm2
-
-**(Option 3)** Just look around and pick and choose what you like for your own
-  dotfiles.
-
-## Notes
-
-If you'd like to use git and github, be sure to add your own `~/.gitconfig_local` file:
-
-```
-[user]
-  email = email@example.com
-  name = Your Name
-[github]
-  user = your-github-username
+```sh
+git clone https://github.com/neilsmind/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./install.sh
 ```
 
-## Requirements
+This will symlink the configuration files in `.dotfiles` to your home directory.
+The install script creates backups of any existing files before symlinking.
 
-* *nix environment (e.g. Mac OS X or Linux)
-* Zsh version >= 3 (for command line enhancements)
-* Atom version >= 1.7 (for atom config and setup)
-* Ruby (for the install.rb to work)
+## what's inside
+
+- **zshrc**: Main zsh configuration with PATH setup and tool initialization
+- **zshrc.d/**: Modular zsh configurations that get automatically loaded
+- **gitconfig**: Git configuration with aliases and editor settings  
+- **gitignore_global**: Global gitignore patterns
+- **config/starship.toml**: Starship prompt configuration
+
+## how it works
+
+The main `zshrc` file sources everything in the `zshrc.d/` directory automatically.
+This keeps configurations modular and organized by topic.
+
+The `install.sh` script handles symlinking files to your home directory:
+- `zshrc` → `~/.zshrc`
+- `gitconfig` → `~/.gitconfig`
+- `gitignore_global` → `~/.gitignore_global`
+- `config/starship.toml` → `~/.config/starship.toml`
+
+## local customizations
+
+Create these files for personal settings that won't be tracked in git:
+- `~/.zshrc.local` - for shell customizations
+- `~/.gitconfig_local` - for git user info and personal settings
+
+## dependencies
+
+These dotfiles expect you have:
+- zsh as your shell
+- git
+- Optional: starship, fnm, rbenv, pyenv, direnv, hub
+
+## fork it
+
+If you want to use these as a starting point, fork this repo and modify to your
+liking. Remove what you don't use, add what you need.
