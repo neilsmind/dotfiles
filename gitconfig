@@ -3,10 +3,8 @@
 [fetch]
   prune = true
 [core]
-	excludesfile = /Users/neil/.gitignore
+	excludesfile = ~/.gitignore
 	editor = code --wait
-[include]
-	path = ~/.gitconfig_local
 [push]
 	default = current
 [alias]
@@ -27,12 +25,10 @@
     tool = default-difftool
 [difftool "default-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [user]
-	name = {{ .github_username | quote }}
-	email = {{ .email | quote }}
+	name = Neil Giarratana
+	email = neil@neilsmind.com
+[pull]
+	ff = only
+[include]
+	path = ~/.gitconfig_local
