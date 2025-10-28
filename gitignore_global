@@ -2,8 +2,10 @@
 .DS_Store
 
 *.sw[nop]
+.zshrc.local
 .bundle
 .env
+.env.local
 .envrc
 log/*.log
 rerun.txt
