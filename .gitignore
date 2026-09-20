@@ -1,1 +1,13 @@
-backups/*
+# install.sh backups
+backups/
+
+# Omarchy refresh scripts write these beside the linked file, and editors leave
+# their own droppings. None of it is config.
+*.bak.*
+*~
+\#*\#
+*.omarchy-upgrade-*
+
+# Per-machine summaries stay local. They describe hardware and habits and do
+# not belong in a public repo. Each machine only needs its own file anyway.
+machines/

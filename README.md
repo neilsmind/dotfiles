@@ -1,53 +1,54 @@
 # dotfiles
 
-My dotfiles.
+Config for every machine I use: macOS (zsh) and Omarchy Linux (bash).
+One repo, one shared layer, small per-platform layers.
 
-## install
+## Layout
 
-Run this:
+```
+config/            shared XDG config, linked into ~/.config on every machine
+  git/  nvim/  tmux/  herdr/  ghostty/  mise/  starship.toml
+shell/
+  env.sh aliases.sh functions.sh hooks.sh   plain sh, sourced by both shells
+  bashrc  zshrc                            thin loaders, linked to ~/.bashrc and ~/.zshrc
+platform/
+  linux/config/    Omarchy-only: hypr/ overrides and scripts, a systemd user unit
+  macos/           (nothing yet)
+machines/          one file per machine, gitignored: what is customized here and why
+agents/CLAUDE.md   guidance for AI agents, linked to ~/.claude/CLAUDE.md and ~/AGENTS.md
+legacy/            the previous zsh-era files, kept until the Macs are migrated
+install.sh         links everything for the current OS
+```
+
+## Install
 
 ```sh
-git clone https://github.com/neilsmind/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+git clone git@github.com:neilsmind/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./install.sh --dry-run   # see what would change
 ./install.sh
 ```
 
-This will symlink the configuration files in `.dotfiles` to your home directory.
-The install script creates backups of any existing files before symlinking.
+Links are made per file, so tools and Omarchy can keep their own untracked
+files next to ours. Anything already at a target path is moved into
+`backups/` first. Rerunning is a no-op when everything is in place.
 
-## what's inside
+## How the shell layer works
 
-- **zshrc**: Main zsh configuration with PATH setup and tool initialization
-- **zshrc.d/**: Modular zsh configurations that get automatically loaded
-- **gitconfig**: Git configuration with aliases and editor settings  
-- **gitignore_global**: Global gitignore patterns
-- **config/starship.toml**: Starship prompt configuration
+Both `.bashrc` and `.zshrc` source the same four files from `shell/`, in order:
+`env.sh` (PATH, EDITOR, Homebrew), `aliases.sh`, `functions.sh`, and `hooks.sh`
+(mise, direnv, zoxide, starship, each guarded so it is skipped if absent or
+already initialized). Only the shell-specific bits, such as completion setup,
+live in the loaders themselves.
 
-## how it works
+On Omarchy, `.bashrc` sources Omarchy's own rc first, so its aliases and tool
+init load before ours and ours win on conflict.
 
-The main `zshrc` file sources everything in the `zshrc.d/` directory automatically.
-This keeps configurations modular and organized by topic.
+Per-machine overrides go in `~/.config/shell/local.sh` (shell) and
+`~/.config/git/config.local` (git identity, credential helper). Neither is tracked.
 
-The `install.sh` script handles symlinking files to your home directory:
-- `zshrc` → `~/.zshrc`
-- `gitconfig` → `~/.gitconfig`
-- `gitignore_global` → `~/.gitignore_global`
-- `config/starship.toml` → `~/.config/starship.toml`
+## Adding something
 
-## local customizations
-
-Create these files for personal settings that won't be tracked in git:
-- `~/.zshrc.local` - for shell customizations
-- `~/.gitconfig_local` - for git user info and personal settings
-
-## dependencies
-
-These dotfiles expect you have:
-- zsh as your shell
-- git
-- Optional: starship, fnm, rbenv, pyenv, direnv, hub
-
-## fork it
-
-If you want to use these as a starting point, fork this repo and modify to your
-liking. Remove what you don't use, add what you need.
+- A tool's config: put it under `config/<tool>/` at the same path it has under `~/.config`, rerun `install.sh`.
+- Platform-only config: same, under `platform/<os>/config/`.
+- A new machine: run `install.sh`, then write `machines/<hostname>.md`. That directory is gitignored, so the file stays on that machine only.

@@ -1,0 +1,11 @@
+[Unit]
+Description=Reconfigure Hyprland monitors on resume from suspend
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/neilsmind/.config/hypr/scripts/monitor-hotplug.sh
+
+[Install]
+WantedBy=suspend.target sleep.target
