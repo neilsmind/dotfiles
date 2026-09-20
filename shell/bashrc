@@ -1,0 +1,34 @@
+# ~/.bashrc  (linked from ~/dotfiles/shell/bashrc)
+
+# Non-interactive shells stop here.
+[[ $- != *i* ]] && return
+
+# --- Omarchy layer (Linux only) -------------------------------------------
+# Omarchy ships its own aliases, functions, and tool init. Load it first so the
+# shared layer below can override anything it sets. Same header Omarchy writes
+# into a fresh ~/.bashrc.
+if [[ -f /etc/omarchy.conf ]]; then
+  source /etc/omarchy.conf
+  export OMARCHY_PATH="${OMARCHY_PATH:-/usr/share/omarchy}"
+elif [[ -d /usr/share/omarchy ]]; then
+  export OMARCHY_PATH=/usr/share/omarchy
+fi
+if [[ -n ${OMARCHY_PATH:-} && -r "$OMARCHY_PATH/default/bash/rc" ]]; then
+  source "$OMARCHY_PATH/default/bash/rc"
+fi
+
+# --- Shared layer -----------------------------------------------------------
+DOTFILES="${DOTFILES:-$HOME/dotfiles}"
+DOT_SHELL=bash
+source "$DOTFILES/shell/env.sh"
+source "$DOTFILES/shell/aliases.sh"
+source "$DOTFILES/shell/functions.sh"
+source "$DOTFILES/shell/hooks.sh"
+
+# --- bash-specific ----------------------------------------------------------
+shopt -s autocd        # type a directory name to cd into it
+shopt -s nocaseglob    # case-insensitive globbing
+shopt -s histappend
+
+# --- Machine-local overrides (not tracked) ---------------------------------
+[[ -f "$HOME/.config/shell/local.sh" ]] && source "$HOME/.config/shell/local.sh"

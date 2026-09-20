@@ -1,0 +1,23 @@
+# ~/.zshrc  (linked from ~/dotfiles/shell/zshrc)
+
+# --- Shared layer -----------------------------------------------------------
+DOTFILES="${DOTFILES:-$HOME/dotfiles}"
+DOT_SHELL=zsh
+source "$DOTFILES/shell/env.sh"
+source "$DOTFILES/shell/aliases.sh"
+source "$DOTFILES/shell/functions.sh"
+source "$DOTFILES/shell/hooks.sh"
+
+# --- zsh-specific -----------------------------------------------------------
+bindkey -e                      # emacs keybindings
+setopt autocd                   # type a directory name to cd into it
+setopt nocaseglob               # case-insensitive globbing
+setopt hist_ignore_dups share_history
+
+# Completion. Extra completion dirs go on fpath before compinit.
+[[ -d "$HOME/.docker/completions" ]] && fpath=("$HOME/.docker/completions" $fpath)
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'   # case-insensitive completion
+
+# --- Machine-local overrides (not tracked) ---------------------------------
+[[ -f "$HOME/.config/shell/local.sh" ]] && source "$HOME/.config/shell/local.sh"

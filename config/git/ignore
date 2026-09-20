@@ -1,0 +1,35 @@
+# Global gitignore. Read automatically from ~/.config/git/ignore.
+
+# Editors
+*~
+*.sw[nop]
+\#*\#
+.\#*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local env and secrets
+.env
+.env.local
+.envrc
+.bundle
+
+# Agents
+**/.claude/settings.local.json
+
+# Logs, databases, scratch
+*.log
+log/*.log
+*.sqlite
+*.sqlite3
+rerun.txt
+tags
+tmp/**/*
+!tmp/cache/.keep
